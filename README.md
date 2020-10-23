@@ -51,18 +51,18 @@ if yoou facing problems with dependencies do this:
 ### Nukes the old environment
 
 ```
-% rm -r venv/ 
+rm -r venv/ 
 ```
 
 ### Makes a blank new one
 
 ```
-% python3 -m venv venv/ 
+python3 -m venv venv/ 
 ```
 
 ### Re-installs dependencies
 ```
-% pip install -r ./requirements.txt 
+pip install -r ./requirements.txt 
 ```
 # RUN THE ENVIRONMENT
 
