@@ -16,6 +16,20 @@ if you want to update the dependencies yu must to do this command:
 
 pip freeze > ./requirements.txt
 
+## WEBPACK NODE RECOMENDED VERSION < 10
+
+go to app folder and run
+
+yarn
+
+then:
+
+yarn webpack 
+
+if you wanto to watch 
+
+yarn webpack --watch
+
 ## IF YOU FACE PROBLEMS
 
 if yoou facing problems with dependencies do this:
