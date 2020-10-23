@@ -1,0 +1,41 @@
+.prices__header {
+  position: relative;
+  overflow: visible;
+
+  &::after{
+    content: '';
+    background-color: #F8F8F8;
+    position: absolute;
+    width: 75%;
+    left: 0;
+    top: 0;
+    height: 150%;
+    z-index: -1;
+  }
+
+  .container {
+    width: 90%;
+    max-width: $desktop;
+    margin: auto;
+    padding: 0;
+
+    .prices__header__content {
+      width: 80%;
+      
+      .prices__header-title{
+        color: $fb-primary;
+        font-size: 40px;
+        letter-spacing: 0.05px;
+        line-height: 60px;
+      }
+
+      .prices__header-description {
+        color: #63666A;
+        font-size: 22px;
+        letter-spacing: 0;
+        line-height: 30px;
+      }
+    }
+
+  }
+}

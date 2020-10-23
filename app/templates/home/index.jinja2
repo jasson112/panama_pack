@@ -1,23 +1,32 @@
 {% extends "layout.jinja2" %} {% block content %}
-<section class="banner">
-  <div class="banner__shadow"></div>
-  <h1 class="banner__title">SHOP URBAN COLLECTION</h1>
-  <p class="banner__subtitle">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua.
-  </p>
-  <button class="banner__cta" id="add_order" >QUIERO VER MÁS</button>
+<section class="prices__header">
+  <div class="container">
+    <div class="prices__header__content">
+      <h3 class="prices__header-title">PLANES PARA IMPULSAR TU NEGOCIO</h3>
+      <p class="prices__header-description">Queremos ser tu aliado, por eso creamos una experiencia única para ti y tus clientes. Ofrecemos lo último en tecnología a los mejores precios, así te ayudamos a impulsar tu negocio aún más lejos.</p>
+    </div>
+    <figure>
+    <img src="/static/dist/images/prices_header.png" alt="Precios header">
+    </figure>
+  </div>
 </section>
-<section class="categories">
-    {% for item in categories %}
-        <article class="categories__item">
-            <a href="{{url_for('category', key=item.key)}}" class="categories__item-link">
-                <figure class="categories__item-img">
-                    <img src="{{ config['S3_LOCATION'] ~ item.image.path }}">
-                </figure>
-                <h2 class="categories__item-title">{{ item.name }}</h2>
-            </a>
-          </article>
-    {% endfor %}
+
+<section class="price__tabs">
+  <ul>
+    <li>
+      <div class="price__tabs-name">ESENCIAL</div>
+      <p class="price__tabs-description">Pensado para empresas en crecimiento con equipos pequeños que necesitan estar conectados con sus clientes.</p>
+      <p class="price__tabs-price">por: <span>$39.99</span></p>
+      <ul class="price__tabs-specs">
+        <li>
+          <figure>
+            <img src="/static/dist/images/prices_header.png" alt="Plan spec">
+            <p>150 megas internet</p>
+          </figure>
+        </li>
+      </ul>
+      <a href="#" class="button">Cotizar plan</a>
+    </li>
+  </ul>
 </section>
 {% endblock %}
