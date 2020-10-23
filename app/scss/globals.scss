@@ -89,3 +89,10 @@ textarea {
   margin: auto;
   padding: 0;
 }
+
+.table{
+  font-family: $font-book;
+  thead{
+    background-color: $fb-primary;
+  }
+}

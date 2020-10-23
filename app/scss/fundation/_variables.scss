@@ -10,29 +10,29 @@
 
 @font-face {
   font-family: "futuraPTBook";
-  src: url("/static/dist/FuturaPT/FuturaPTBook.eot");
-  src: url("/static/dist/FuturaPT/FuturaPTBook.eot") format("embedded-opentype"),
-    url("/static/dist/FuturaPT/FuturaPTBook.woff") format("woff"),
-    url("/static/dist/FuturaPT/FuturaPTBook.ttf") format("truetype"),
-    url("/static/dist/FuturaPT/FuturaPTBook.svg#FuturaPTBook") format("svg");
+  src: url("/static/dist/fonts/FuturaPT/FuturaPTBook.eot");
+  src: url("/static/dist/fonts/FuturaPT/FuturaPTBook.eot") format("embedded-opentype"),
+    url("/static/dist/fonts/FuturaPT/FuturaPTBook.woff") format("woff"),
+    url("/static/dist/fonts/FuturaPT/FuturaPTBook.ttf") format("truetype"),
+    url("/static/dist/fonts/FuturaPT/FuturaPTBook.svg#FuturaPTBook") format("svg");
 }
 
 @font-face {
   font-family: "futuraPTMedium";
-  src: url("/static/dist/FuturaPT/FuturaPT-Medium.eot");
-  src: url("/static/dist/FuturaPT/FuturaPT-Medium.eot") format("embedded-opentype"),
-    url("/static/dist/FuturaPT/FuturaPT-Medium.woff") format("woff"),
-    url("/static/dist/FuturaPT/FuturaPT-Medium.ttf") format("truetype"),
-    url("/static/dist/FuturaPT/FuturaPT-Medium.svg#FuturaPTBook") format("svg");
+  src: url("/static/dist/fonts/FuturaPT/FuturaPT-Medium.eot");
+  src: url("/static/dist/fonts/FuturaPT/FuturaPT-Medium.eot") format("embedded-opentype"),
+    url("/static/dist/fonts/FuturaPT/FuturaPT-Medium.woff") format("woff"),
+    url("/static/dist/fonts/FuturaPT/FuturaPT-Medium.ttf") format("truetype"),
+    url("/static/dist/fonts/FuturaPT/FuturaPT-Medium.svg#FuturaPTBook") format("svg");
 }
 
 @font-face {
   font-family: "futuraPTBold";
-  src: url("/static/dist/FuturaPT/FuturaPT-Bold.eot");
-  src: url("/static/dist/FuturaPT/FuturaPT-Bold.eot") format("embedded-opentype"),
-    url("/static/dist/FuturaPT/FuturaPT-Bold.woff") format("woff"),
-    url("/static/dist/FuturaPT/FuturaPT-Bold.ttf") format("truetype"),
-    url("/static/dist/FuturaPT/FuturaPT-Bold.svg#FuturaPTBook") format("svg");
+  src: url("/static/dist/fonts/FuturaPT/FuturaPT-Bold.eot");
+  src: url("/static/dist/fonts/FuturaPT/FuturaPT-Bold.eot") format("embedded-opentype"),
+    url("/static/dist/fonts/FuturaPT/FuturaPT-Bold.woff") format("woff"),
+    url("/static/dist/fonts/FuturaPT/FuturaPT-Bold.ttf") format("truetype"),
+    url("/static/dist/fonts/FuturaPT/FuturaPT-Bold.svg#FuturaPTBook") format("svg");
 }
 
 $tablet: 600px;
