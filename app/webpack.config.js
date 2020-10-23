@@ -1,18 +1,18 @@
-const path = require('path');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const CopyPlugin = require('copy-webpack-plugin');
-const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ManifestPlugin = require('webpack-manifest-plugin');
+const path = require("path");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
+const webpack = require("webpack");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const ManifestPlugin = require("webpack-manifest-plugin");
 
 module.exports = {
-  mode: 'development',
+  mode: "development",
   watchOptions: {
     aggregateTimeout: 600,
   },
   entry: {
-    style: ['./scss/style.scss'],
-    modules: ['./js/globals.js'],
+    style: ["./scss/style.scss"],
+    modules: ["./js/globals.js"],
   },
   plugins: [
     new webpack.HashedModuleIdsPlugin(),
@@ -22,50 +22,59 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         {
-          from: './images',
-          to: path.resolve(__dirname, 'static/dist/images'),
+          from: "./images",
+          to: path.resolve(__dirname, "static/dist/images"),
+        },
+      ],
+    }),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: "./fonts",
+          to: path.resolve(__dirname, "static/dist/fonts"),
         },
       ],
     }),
     new HtmlWebpackPlugin({
       inject: true,
-      template: './templates/layout.jinja2',
-      filename: 'index.html',
+      template: "./templates/layout.jinja2",
+      filename: "index.html",
     }),
     new ManifestPlugin(),
   ],
   output: {
-    path: path.resolve(__dirname, 'static/dist'),
-    filename: 'js/[name].[contenthash:8].js',
+    path: path.resolve(__dirname, "static/dist"),
+    filename: "js/[name].[contenthash:8].js",
   },
   optimization: {
-    runtimeChunk: 'single',
+    runtimeChunk: "single",
     splitChunks: {
       cacheGroups: {
         commons: {
           test: /[\\/]node_modules[\\/]/,
-          name: 'vendors',
-          chunks: 'all',
+          name: "vendors",
+          chunks: "all",
         },
       },
     },
   },
   module: {
     rules: [
+      
       {
-        enforce: 'pre',
+        enforce: "pre",
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'eslint-loader',
+        loader: "eslint-loader",
       },
       {
         test: /\.js$/,
         exclude: /node_modules/,
         use: [
           {
-            loader: 'babel-loader',
+            loader: "babel-loader",
             options: {
-              presets: ['@babel/preset-env'],
+              presets: ["@babel/preset-env"],
             },
           },
         ],
@@ -74,22 +83,22 @@ module.exports = {
         test: /\.scss$/,
         use: [
           {
-            loader: 'file-loader',
+            loader: "file-loader",
             options: {
-              name: '/css/[name].[contenthash:8].css',
+              name: "/css/[name].[contenthash:8].css",
             },
           },
           {
-            loader: 'extract-loader',
+            loader: "extract-loader",
           },
           {
-            loader: 'css-loader?-url',
+            loader: "css-loader?-url",
           },
           {
-            loader: 'postcss-loader',
+            loader: "postcss-loader",
           },
           {
-            loader: 'sass-loader',
+            loader: "sass-loader",
           },
         ],
       },

@@ -1,23 +1,29 @@
-{% extends "layout.jinja2" %} {% block content %}
-<section class="banner">
-  <div class="banner__shadow"></div>
-  <h1 class="banner__title">SHOP URBAN COLLECTION</h1>
-  <p class="banner__subtitle">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua.
-  </p>
-  <button class="banner__cta" id="add_order" >QUIERO VER MÁS</button>
-</section>
-<section class="categories">
-    {% for item in categories %}
-        <article class="categories__item">
-            <a href="{{url_for('category', key=item.key)}}" class="categories__item-link">
-                <figure class="categories__item-img">
-                    <img src="{{ config['S3_LOCATION'] ~ item.image.path }}">
-                </figure>
-                <h2 class="categories__item-title">{{ item.name }}</h2>
-            </a>
-          </article>
-    {% endfor %}
+{% extends "layout.jinja2" %}
+{% block content %}
+<section class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Month</th>
+        <th>Savings</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>January</td>
+        <td>$100</td>
+      </tr>
+      <tr>
+        <td>February</td>
+        <td>$80</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>Sum</td>
+        <td>$180</td>
+      </tr>
+    </tfoot>
+  </table>
 </section>
 {% endblock %}

@@ -1,5 +1,5 @@
 body {
-  @include font-regular;
+  font-family: $font-light;
 }
 * {
   box-sizing: border-box;
@@ -19,7 +19,6 @@ main {
 }
 
 .error {
-  @include font-regular;
   font-size: 15px;
   color: #e02020;
   line-height: 14px;
@@ -30,29 +29,7 @@ main {
   }
 }
 
-.add-to-cart {
-  font-size: 15px;
-  line-height: 18px;
-  /* identical to box height */
-  @include font-bold;
-  text-align: center;
-  letter-spacing: 1.875px;
-  width: 100%;
-  padding: 20px;
-  background: #fe5717;
-  border: 1px solid #ffffff;
-  color: #ffffff;
-  &.gray {
-    background: #e3e3e3;
-    border: 1px solid #ffffff;
-    color: #000000;
-    text-align: center;
-    padding: 16px;
-  }
-}
-
 label {
-  @include font-regular;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.46px;
@@ -62,7 +39,6 @@ label {
   }
 }
 input {
-  @include font-regular;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.46px;
@@ -88,7 +64,6 @@ select {
   letter-spacing: 0.46px;
   border: 1px solid #cccccc;
   color: #000000;
-  @include font-regular;
   margin: 0 25px 30px 0;
 }
 
@@ -99,18 +74,25 @@ textarea {
   max-width: 1050px;
   height: 200px;
   font-size: 12px;
-  @include font-regular;
 }
 
 .link {
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.69px;
-  @include font-ligth;
   color: #000000;
 }
 
 .container {
-  display: flex;
-  padding: 37px 300px;
+  width: 90%;
+  max-width: $desktop;
+  margin: auto;
+  padding: 0;
+}
+
+.table{
+  font-family: $font-book;
+  thead{
+    background-color: $fb-primary;
+  }
 }
