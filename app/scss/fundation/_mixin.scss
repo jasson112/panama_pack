@@ -1,4 +1,6 @@
-@mixin reset-list {
+
+
+@mixin reset-list { 
   margin: 0;
   padding: 0;
   list-style: none;
@@ -10,37 +12,6 @@
 
 @mixin reset-figure {
   margin: 0;
-}
-
-@mixin font-ligth {
-  font-family: $f-family;
-  font-weight: 300;
-}
-
-@mixin font-regular {
-  font-family: $f-family;
-  font-weight: 400;
-}
-
-@mixin font-bold {
-  font-family: $f-family;
-  font-weight: 700;
-}
-
-@mixin font-black {
-  font-family: $f-family;
-  font-weight: 900;
-}
-
-@mixin z-font-regular {
-  font-family: $z-family;
-  font-weight: 400;
-}
-
-@mixin z-font-bold {
-  font-family: $z-family;
-  font-weight: 700;
-  font-style: normal;
 }
 
 @mixin respond($breakpoint) {

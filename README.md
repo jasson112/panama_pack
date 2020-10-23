@@ -69,3 +69,10 @@ pip install -r ./requirements.txt
 ```
 python wsgi.py
 ```
+
+
+# FREEZE
+
+```
+python server.py freeze
+```
