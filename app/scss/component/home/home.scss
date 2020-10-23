@@ -36,6 +36,93 @@
         line-height: 30px;
       }
     }
+  }
+}
 
+.plans__tabs {
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 0;
+
+    .plans__tabs-element {
+      width: 31%;
+      background-color: #E2E1E1;
+      position: relative;
+      overflow: visible;
+
+      .plans__tabs-name {
+        background-color: $fb-primary;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        color: #fff;
+        font-size: 24px;
+      }
+
+      .plans__tabs-description {
+        font-size: 18px;
+        color: #63666A;
+        text-align: center;
+        line-height: 25px;
+      }
+
+      .plans__tabs-price {
+        text-align: center;
+        font-size: 36px;
+        color: #004B87;
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+        
+        span {
+          font-size: 15px;
+          color: #63666A;
+          line-height: 25px;
+          margin-right: 5px;
+        }
+      }
+
+      .plans__tabs-specs {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+
+        .plans__tabs-spec {
+          display: flex;
+          align-items: flex-start;
+          margin-bottom: 15px;
+
+          p {
+            margin: 0;
+            padding-left: 15px;
+            font-family: FuturaPTBook;
+            font-size: 18px;
+            color: #63666A;
+            letter-spacing: 0;
+          }
+        }
+      }
+
+      .button {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        background-color: #ff4713;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        line-height: 1.4;
+        padding: 10px 20px;
+        display: inline-block;
+        text-decoration: none;
+        text-align: center;
+        clip-path: polygon(100% 0,5px 3px,0 43px,98.5% 48px);
+      }
+    }
   }
 }
