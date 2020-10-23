@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="{{ description }}" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    {% set asset_folder = url_for('static', filename='dist') %}
+    {{
+      jinjasset(dist_folder=asset_folder, who=0)
+    }}
+  </head>
+  <body>
+    <template id="cartItem">
+      <li class="menu__item border">
+        <ul class="menu__item-shopping">
+            <li class="shopping__item">
+                <figure>
+                    <img src="{{url_for('static', filename='dist/images/botas_thumb.png')}}">
+                </figure>
+                <div class="shopping__item-content">
+                    <h2>Botín suela track detalle cordón</h2>
+                    <p>
+                        Color: Negro<br>
+                    </p>
+                    <p>Talla: 37<br></p>
+                    <p>Cantidad: 1<br></p>
+                    <p><h3>Total: $179,000 COP</h3></p>
+                </div>
+            </li>
+        </ul>
+      </li>
+    </template>
+    {% include 'header.jinja2' %}
+    <main>
+      {% block content %}{% endblock %}
+    </main>
+    {% include 'footer.jinja2' %}
+  </body>
+  {{
+    jinjasset(dist_folder=asset_folder, who=1)
+  }}
+  {% block javascripts %}{% endblock %}
+</html>

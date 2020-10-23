@@ -1,0 +1,32 @@
+<header>
+  <div class="header__item">
+    <input type="checkbox" id="burger" class="burger" />
+    <ul class="menu">
+      <li class="menu__item orange">
+        <a href="#">
+          <span> Rebajas </span>
+          <img
+            src="{{url_for('static', filename='dist/images/arrow.png')}}"
+            alt="logo"
+          />
+        </a>
+      </li>
+    </ul>
+    <label for="burger" class="burger__icon">
+      <figure>
+        <img
+          src="{{url_for('static', filename='dist/images/menu.png')}}"
+          alt="logo"
+        />
+      </figure>
+    </label>
+    <a href="{{ url_for('home') }}" title="Go to home" class="logo">
+      <figure>
+        <img
+          src="{{url_for('static', filename='dist/images/logo.png')}}"
+          alt="logo"
+        />
+      </figure>
+    </a>
+  </div>
+</header>
