@@ -1,29 +1,177 @@
-{% extends "layout.jinja2" %}
-{% block content %}
+{% extends "layout.jinja2" %} {% block content %}
 <section class="container">
+  <article class="tip">
+    <div class="content">
+      <img src="/static/dist/images/check-orange.png" />
+      <p class="name">Incluido en el plan</p>
+    </div>
+    <div class="content">
+      <img src="/static/dist/images/price-orange.png" />
+      <p class="name">
+        Adquiérelo con un costo <br />
+        adicional
+      </p>
+    </div>
+  </article>
   <table class="table">
     <thead>
       <tr>
-        <th>Month</th>
-        <th>Savings</th>
+        <th></th>
+        <th>
+          ESENCIAL<br />
+          <span class="price"> $ 39.99 </span>
+        </th>
+        <th>
+          AVANZADO<br />
+          <span class="price"> $ 49.99 </span>
+        </th>
+        <th>
+          PREMIUM<br />
+          <span class="price"> $ 70.99 </span>
+        </th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>January</td>
-        <td>$100</td>
+        <td class="category">Internet</td>
+        <td>150 megas</td>
+        <td>150 megas</td>
+        <td>150 megas</td>
       </tr>
       <tr>
-        <td>February</td>
-        <td>$80</td>
+        <td class="category">Fixed</td>
+        <td>
+          <div class="fit">200 minutos locales red Cable & Wireless</div>
+        </td>
+        <td>
+          <div class="fit">200 minutos locales red Cable & Wireless</div>
+        </td>
+        <td>
+          <div class="fit">200 minutos locales red Cable & Wireless</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="category">
+          Almacenamiento <br />en la Nube
+          <p class="subtitle">
+            2TB de espacio para que puedas acceder a todos tus documentos, fotos
+            y videos en cualquier dispositivo compatible (PC, Android, iPhone,
+            etc).
+          </p>
+        </td>
+        <td class="orange"></td>
+        <td class="orange"></td>
+        <td class="orange"></td>
+      </tr>
+      <tr>
+        <td class="category">
+          My UC <br />Soffphone
+          <p class="subtitle">
+            Accede a tu teléfono fijo desde donde estés para que no pierdas
+            ninguna llamada y mantente comunicado con tu negocio.
+          </p>
+        </td>
+        <td class="price"></td>
+        <td class="orange"></td>
+        <td class="orange"></td>
+      </tr>
+      <tr>
+        <td class="category">
+          TV
+          <p class="subtitle">
+            Televisión inalámbrica con acceso a programación local e
+            internacional para darle a tu negocio un ambiente diferente.
+          </p>
+        </td>
+        <td class="price"></td>
+        <td class="price"></td>
+        <td class="orange"></td>
+      </tr>
+      <tr>
+        <td class="category">
+          Móvil
+          <p class="subtitle">
+            Comunícate con tus clientes a través de la red con mejor señal del
+            país y planes de data ilimitada.
+          </p>
+        </td>
+        <td class="price"></td>
+        <td class="price"></td>
+        <td class="price"></td>
       </tr>
     </tbody>
-    <tfoot>
-      <tr>
-        <td>Sum</td>
-        <td>$180</td>
-      </tr>
-    </tfoot>
   </table>
+</section>
+<section class="container hidden">
+  <h2 class="title">¿SABES QUÉ PLAN LE CONVIENE MÁS A TU EMPRESA?</h2>
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide slide-container">
+        <img src="/static/dist/images/escencial.png" />
+        <div>
+          <article class="info">
+            {% include "table/arrow-left.svg" %} {% include
+            "table/arrow-rigth.svg" %}
+            <h3 class="info__title">ESENCIAL</h3>
+            <p class="info__desc">
+              Con este plan podrás cubrir las necesidades básicas de tu negocio
+              en cuanto a internet y telefonía fija. Es ideal para empresas con
+              un volumen bajo de llamadas.
+            </p>
+            <button class="button">DESCUBRE MÁS</button>
+          </article>
+        </div>
+        <div class="showtime">
+          <div class="showtime__info">
+            <h3 class="info__title">ESENCIAL</h3>
+            <p class="info__desc">
+              Nuestro plan más completo ya que se adapta a cualquier tipo de
+              negocio e integra servicios de TV con internet y telefonia fija
+              para una conectividad superior en todo momento.
+            </p>
+          </div>
+          <div class="showtime__features">
+            <ul>
+              <li>
+                <img src="/static/dist/images/check-white.png" />
+                <p>
+                  Disfruta de canales variados en tu local que se adaptan a los
+                  gustos de tus clientes
+                </p>
+              </li>
+              <li>
+                <img src="/static/dist/images/check-white.png" />
+                <p>
+                  Disfruta de canales variados en tu local que se adaptan a los
+                  gustos de tus clientes
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="showtime__back">
+            <img src="/static/dist/images/back.png" />
+          </div>
+          <div class="showtime__question">
+            <img src="/static/dist/images/question.png" />
+            <div class="showtime__bubble">
+              <img id="close" src="/static/dist/images/x.png" />
+              <img class="arrow" src="/static/dist/images/bubble-arrow.png" />
+              <h3 class="showtime__bubble-title">¿Necesitas ayuda?</h3>
+              <p class="showtime__bubble-desc">
+                Puedes contactarte con un asesor si necesitas ayuda
+                personalizada para selecionar un plan
+              </p>
+              <button class="button">CONTACTAR ASESOR</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide slide-container">Slide 2</div>
+      <div class="swiper-slide slide-container">Slide 3</div>
+    </div>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
 </section>
 {% endblock %}
