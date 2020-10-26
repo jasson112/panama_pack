@@ -1,5 +1,5 @@
 {% extends "layout.jinja2" %} {% block content %}
-<section class="container">
+<section class="container" id="myTable">
   <article class="tip">
     <div class="content">
       <img src="/static/dist/images/check-orange.png" />
@@ -119,7 +119,7 @@
               en cuanto a internet y telefonía fija. Es ideal para empresas con
               un volumen bajo de llamadas.
             </p>
-            <button class="button">DESCUBRE MÁS</button>
+            <button class="button discover">DESCUBRE MÁS</button>
           </article>
         </div>
         <div class="showtime">
@@ -173,5 +173,15 @@
   </div>
   <!-- Add Pagination -->
   <div class="swiper-pagination"></div>
+</section>
+<section class="full">
+  <article class="medida">
+    <h2 class="medida__title">CREA UN PLAN A TU MEDIDA</h2>
+    <p class="medida__desc">
+      Selecciona los productos y servicios que mejor se adapten a tu modelo de
+      negocio.
+    </p>
+    <button class="button">EMPECEMOS</button>
+  </article>
 </section>
 {% endblock %}
