@@ -193,12 +193,12 @@ textarea {
           max-width: 147px;
         }
         &.orange {
-          background-image: url("/static/dist/images/check-orange.png");
+          background-image: url("https://negocios.masmovilpanama.com/usertest/static/dist/images/check-orange.png");
           background-repeat: no-repeat;
           background-position: center;
         }
         &.price {
-          background-image: url("/static/dist/images/price-orange.png");
+          background-image: url("https://negocios.masmovilpanama.com/usertest/static/dist/images/price-orange.png");
           background-repeat: no-repeat;
           background-position: center;
         }
@@ -452,7 +452,7 @@ a.button {
 }
 
 .full {
-  background-image: url("/static/dist/images/full-mob.png");
+  background-image: url("https://negocios.masmovilpanama.com/usertest/static/dist/images/full-mob.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 250px 25px 25px 25px;
@@ -486,7 +486,7 @@ a.button {
     }
   }
 }
-@include respond("desktop-large") {
+@include respond("desktop") {
   #myTable {
     display: block;
   }
@@ -550,7 +550,7 @@ a.button {
     padding-top: 10vh;
   }
   .full {
-    background-image: url("/static/dist/images/full.png");
+    background-image: url("https://negocios.masmovilpanama.com/usertest/static/dist/images/full.png");
     padding: 30px 250px;
     .medida {
       width: 468px;
