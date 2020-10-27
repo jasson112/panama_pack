@@ -6,6 +6,13 @@
   img {
     width: 100%;
   }
+
+  .header_desktop{
+    display: none;
+  }
+  .header_mobile{
+    display: block;
+  }
 }
 
 .prices__header {
@@ -801,6 +808,15 @@ footer {
         order: 2;
         width: auto;
       }
+    }
+  }
+
+  .header {
+    .header_desktop{
+      display: block;
+    }
+    .header_mobile{
+      display: none;
     }
   }
 }
