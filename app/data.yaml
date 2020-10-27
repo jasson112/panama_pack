@@ -8,6 +8,7 @@ planes_basicos:
       name: "ESENCIAL",
       description: "Pensado para empresas en crecimiento con equipos pequeños que necesitan estar conectados con sus clientes.",
       price: "39.99",
+      link: "https://qa-mycwc.cs44.force.com/ecommerce/s/?bundleId=PR_ESSENTIAL",
       caracteristicas:
         [
           {
@@ -28,6 +29,7 @@ planes_basicos:
       name: "AVANZADO",
       description: "Creado para empresas que necesitan libertad y flexibilidad en telefonía fija.",
       price: "49.99",
+      link: "https://qa-mycwc.cs44.force.com/ecommerce/s/?bundleId=PR_ADVANCED",
       caracteristicas:
         [
           {
@@ -49,6 +51,7 @@ planes_basicos:
       name: "PREMIUM",
       description: "Diseñado para ofrecerle a tu negocio lo último en tecnología y televisión para que siempre estés conectado con tus clientes.",
       price: "70.99",
+      link: "https://qa-mycwc.cs44.force.com/ecommerce/s/?bundleId=PR_PREMIUM",
       caracteristicas:
         [
           {
@@ -281,4 +284,4 @@ compare_planes:
     title: "CREA UN PLAN A TU MEDIDA"
     description: "Selecciona los productos y servicios que mejor se adapten a tu modelo de negocio."
     button: "EMPECEMOS"
-    link: "google.com"
+    link: "https://qa-mycwc.cs44.force.com/ecommerce/s/"
