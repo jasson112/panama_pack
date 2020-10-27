@@ -16,11 +16,11 @@ planes_basicos:
             text: "150 megas internet",
           },
           {
-            image: "static/dist/images/wifi_icon.png",
+            image: "static/dist/images/minutos.png",
             text: "200 minutos locales red Cable & Wireless",
           },
           {
-            image: "static/dist/images/wifi_icon.png",
+            image: "static/dist/images/almacenamiento.png",
             text: "Almacenamiento en la Nube",
           },
         ],
@@ -37,12 +37,12 @@ planes_basicos:
             text: "150 megas internet",
           },
           {
-            image: "static/dist/images/wifi_icon.png",
+            image: "static/dist/images/minutos.png",
             text: "Minutos locales y nacionales ilimitados",
           },
-          { image: "static/dist/images/wifi_icon.png", text: "MyUC Softphone" },
+          { image: "static/dist/images/myuc.png", text: "MyUC Softphone" },
           {
-            image: "static/dist/images/wifi_icon.png",
+            image: "static/dist/images/almacenamiento.png",
             text: "Almacenamiento en la Nube",
           },
         ],
@@ -59,15 +59,15 @@ planes_basicos:
             text: "150 megas internet",
           },
           {
-            image: "static/dist/images/wifi_icon.png",
+            image: "static/dist/images/minutos.png",
             text: "Minutos locales y nacionales ilimitados",
           },
-          { image: "static/dist/images/wifi_icon.png", text: "MyUC Softphone" },
+          { image: "static/dist/images/myuc.png", text: "MyUC Softphone" },
           {
-            image: "static/dist/images/wifi_icon.png",
+            image: "static/dist/images/almacenamiento.png",
             text: "Almacenamiento en la Nube",
           },
-          { image: "static/dist/images/wifi_icon.png", text: "TV Básica" },
+          { image: "static/dist/images/tv.png", text: "TV Básica" },
         ],
     }
 
