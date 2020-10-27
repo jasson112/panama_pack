@@ -8,6 +8,7 @@ planes_basicos:
       name: "ESENCIAL",
       description: "Pensado para empresas en crecimiento con equipos pequeños que necesitan estar conectados con sus clientes.",
       price: "39.99",
+      link: "https://qa-mycwc.cs44.force.com/ecommerce/s/?bundleId=PR_ESSENTIAL",
       caracteristicas:
         [
           {
@@ -28,6 +29,7 @@ planes_basicos:
       name: "AVANZADO",
       description: "Creado para empresas que necesitan libertad y flexibilidad en telefonía fija.",
       price: "49.99",
+      link: "https://qa-mycwc.cs44.force.com/ecommerce/s/?bundleId=PR_ADVANCED",
       caracteristicas:
         [
           {
@@ -49,6 +51,7 @@ planes_basicos:
       name: "PREMIUM",
       description: "Diseñado para ofrecerle a tu negocio lo último en tecnología y televisión para que siempre estés conectado con tus clientes.",
       price: "70.99",
+      link: "https://qa-mycwc.cs44.force.com/ecommerce/s/?bundleId=PR_PREMIUM",
       caracteristicas:
         [
           {
@@ -82,6 +85,7 @@ steps:
         index: "1",
         name: "ESENCIAL",
         price: "65.99",
+        link: "https://qa-mycwc.cs44.force.com/ecommerce/s/?bundleId=PR_MOVIL_ESSENTIAL",
         caracteristicas:
           [
             {
@@ -106,6 +110,7 @@ steps:
         index: "2",
         name: "AVANZADO",
         price: "75.99",
+        link: "https://qa-mycwc.cs44.force.com/ecommerce/s/?bundleId=PR_MOVIL_ADVANCED",
         caracteristicas:
           [
             {
@@ -134,6 +139,7 @@ steps:
         index: "3",
         name: "PREMIUM",
         price: "96.99",
+        link: "https://qa-mycwc.cs44.force.com/ecommerce/s/?bundleId=PR_MOVIL_PREMIUM",
         caracteristicas:
           [
             {
@@ -167,11 +173,11 @@ compare_planes:
 table:
   quote:
     - {
-        image: "/static/dist/images/check-orange.png",
+        image: "static/dist/images/check-orange.png",
         name: "Incluido en el plan",
       }
     - {
-        image: "/static/dist/images/price-orange.png",
+        image: "static/dist/images/price-orange.png",
         name: "Adquiérelo con un costo <br /> adicional",
       }
   features:
@@ -230,7 +236,7 @@ planes:
     - {
         image: "/static/dist/images/escencial.png",
         name: "ESENCIAL",
-        link: "http://google.com",
+        link: "https://qa-mycwc.cs44.force.com/ecommerce/s/?bundleId=PR_ESSENTIAL",
         description: "Con este plan podrás cubrir las necesidades básicas de tu negocio en cuanto a internet y telefonía fija. Es ideal para empresas con un volumen bajo de llamadas. ",
         showtime:
           {
@@ -245,7 +251,7 @@ planes:
     - {
         image: "/static/dist/images/escencial.png",
         name: "AVANZADO",
-        link: "http://google.com",
+        link: "https://qa-mycwc.cs44.force.com/ecommerce/s/?bundleId=PR_ADVANCED",
         description: "Perfecto para empresas que necesitan una mayor conectividad con sus clientes y proveedores. La idea es que no pierdas ninguna llamada y puedas ofrecer una mejor atención al cliente.",
         showtime:
           {
@@ -260,7 +266,7 @@ planes:
     - {
         image: "/static/dist/images/escencial.png",
         name: "PREMIUM",
-        link: "http://google.com",
+        link: "https://qa-mycwc.cs44.force.com/ecommerce/s/?bundleId=PR_PREMIUM",
         description: "Nuestro plan más completo ya que se adapta a cualquier tipo de negocio e integra servicios de TV con internet y telefonia fija para una conectividad superior en todo momento.",
         showtime:
           {
@@ -276,9 +282,9 @@ descrubre_mas: "DESCUBRE MÁS"
 ayuda:
   title: "¿Necesitas ayuda?"
   description: "Si todavía tienes dudas acerca del plan que mejor se ajuste a tus necesidades nuestros asesores te contactarán para brindarte ayuda personalizada."
-contactar_asesor: "SOLICITAR MÁS INFORMACIÓN"
+contactar_asesor: "CONTACTAR ASESOR"
 byob:
   title: "CREA UN PLAN A TU MEDIDA"
   description: "Selecciona los productos y servicios que mejor se adapten a tu modelo de negocio."
   button: "EMPECEMOS"
-  link: "google.com"
+  link: "https://qa-mycwc.cs44.force.com/ecommerce/s/"

@@ -1,4 +1,10 @@
 {% extends "layout.jinja2" %} {% block content %}
+<section class="header">
+  <figure>
+    <img src="static/dist/images/header.png" alt="header">
+  </figure>
+</section>
+
 <section class="prices__header">
   <div class="container">
     <div class="prices__header__content">
@@ -35,7 +41,7 @@
           </li>
           {% endfor %}
         </ul>
-        <a href="#" class="button">COTIZAR PLAN</a>
+        <a href="{{ item.link }}" class="button">COTIZAR PLAN</a>
       </li>
       {% endfor %}
     </ul>
