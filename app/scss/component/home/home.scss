@@ -102,6 +102,7 @@
         margin: 10px auto;
         font-size: 22px;
         line-height: 29.54px;
+        min-height: 128px;
       }
 
       .plans__tabs-price {
@@ -339,14 +340,14 @@
       .upgrade__plan__two-plan {
         width: 100%;
         margin: auto;
-        background-color: #E2E1E1;
+        background-color: #e2e1e1;
         display: none;
 
         &.active {
           display: block;
         }
-        
-        p{
+
+        p {
           font-family: $font-book;
           font-size: 15px;
           color: #63666a;

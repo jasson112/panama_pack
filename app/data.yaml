@@ -16,11 +16,11 @@ planes_basicos:
             text: "150 megas internet",
           },
           {
-            image: "static/dist/images/wifi_icon.png",
+            image: "static/dist/images/minutos.png",
             text: "200 minutos locales red Cable & Wireless",
           },
           {
-            image: "static/dist/images/wifi_icon.png",
+            image: "static/dist/images/almacenamiento.png",
             text: "Almacenamiento en la Nube",
           },
         ],
@@ -37,12 +37,12 @@ planes_basicos:
             text: "150 megas internet",
           },
           {
-            image: "static/dist/images/wifi_icon.png",
+            image: "static/dist/images/minutos.png",
             text: "Minutos locales y nacionales ilimitados",
           },
-          { image: "static/dist/images/wifi_icon.png", text: "MyUC Softphone" },
+          { image: "static/dist/images/myuc.png", text: "MyUC Softphone" },
           {
-            image: "static/dist/images/wifi_icon.png",
+            image: "static/dist/images/almacenamiento.png",
             text: "Almacenamiento en la Nube",
           },
         ],
@@ -59,15 +59,15 @@ planes_basicos:
             text: "150 megas internet",
           },
           {
-            image: "static/dist/images/wifi_icon.png",
+            image: "static/dist/images/minutos.png",
             text: "Minutos locales y nacionales ilimitados",
           },
-          { image: "static/dist/images/wifi_icon.png", text: "MyUC Softphone" },
+          { image: "static/dist/images/myuc.png", text: "MyUC Softphone" },
           {
-            image: "static/dist/images/wifi_icon.png",
+            image: "static/dist/images/almacenamiento.png",
             text: "Almacenamiento en la Nube",
           },
-          { image: "static/dist/images/wifi_icon.png", text: "TV Básica" },
+          { image: "static/dist/images/tv.png", text: "TV Básica" },
         ],
     }
 
@@ -93,15 +93,15 @@ steps:
               text: "300 megas internet",
             },
             {
-              image: "static/dist/images/wifi_icon.png",
+              image: "static/dist/images/minutos.png",
               text: "200 minutos locales red Cable & Wireless	",
             },
             {
-              image: "static/dist/images/wifi_icon.png",
+              image: "static/dist/images/almacenamiento.png",
               text: "Almacenamiento en la Nube",
             },
             {
-              image: "static/dist/images/wifi_icon.png",
+              image: "static/dist/images/data.png",
               text: "Plan Data sin Límites",
             },
           ],
@@ -118,19 +118,16 @@ steps:
               text: "300 megas internet",
             },
             {
-              image: "static/dist/images/wifi_icon.png",
+              image: "static/dist/images/minutos.png",
               text: "Minutos locales y nacionales ilimitados",
             },
             {
-              image: "static/dist/images/wifi_icon.png",
+              image: "static/dist/images/almacenamiento.png",
               text: "Almacenamiento en la Nube",
             },
+            { image: "static/dist/images/myuc.png", text: "MyUC Softphone" },
             {
-              image: "static/dist/images/wifi_icon.png",
-              text: "MyUC Softphone",
-            },
-            {
-              image: "static/dist/images/wifi_icon.png",
+              image: "static/dist/images/data.png",
               text: "Plan Data sin Límites",
             },
           ],
@@ -147,22 +144,19 @@ steps:
               text: "300 megas internet",
             },
             {
-              image: "static/dist/images/wifi_icon.png",
+              image: "static/dist/images/minutos.png",
               text: "Minutos locales y nacionales ilimitados",
             },
             {
-              image: "static/dist/images/wifi_icon.png",
+              image: "static/dist/images/almacenamiento.png",
               text: "Almacenamiento en la Nube",
             },
+            { image: "static/dist/images/myuc.png", text: "MyUC Softphone" },
             {
-              image: "static/dist/images/wifi_icon.png",
-              text: "MyUC Softphone",
-            },
-            {
-              image: "static/dist/images/wifi_icon.png",
+              image: "static/dist/images/data.png",
               text: "Plan Data sin Límites",
             },
-            { image: "static/dist/images/wifi_icon.png", text: "TV Básica" },
+            { image: "static/dist/images/tv.png", text: "TV Básica" },
           ],
       }
 
@@ -234,7 +228,7 @@ planes:
   main_title: "¿SABES QUÉ PLAN LE CONVIENE MÁS A TU EMPRESA?"
   lista:
     - {
-        image: "/static/dist/images/escencial.png",
+        image: "static/dist/images/escencial.png",
         name: "ESENCIAL",
         link: "https://qa-mycwc.cs44.force.com/ecommerce/s/?bundleId=PR_ESSENTIAL",
         description: "Con este plan podrás cubrir las necesidades básicas de tu negocio en cuanto a internet y telefonía fija. Es ideal para empresas con un volumen bajo de llamadas. ",
@@ -249,7 +243,7 @@ planes:
           },
       }
     - {
-        image: "/static/dist/images/escencial.png",
+        image: "static/dist/images/avanzado.png",
         name: "AVANZADO",
         link: "https://qa-mycwc.cs44.force.com/ecommerce/s/?bundleId=PR_ADVANCED",
         description: "Perfecto para empresas que necesitan una mayor conectividad con sus clientes y proveedores. La idea es que no pierdas ninguna llamada y puedas ofrecer una mejor atención al cliente.",
@@ -264,7 +258,7 @@ planes:
           },
       }
     - {
-        image: "/static/dist/images/escencial.png",
+        image: "static/dist/images/premium.png",
         name: "PREMIUM",
         link: "https://qa-mycwc.cs44.force.com/ecommerce/s/?bundleId=PR_PREMIUM",
         description: "Nuestro plan más completo ya que se adapta a cualquier tipo de negocio e integra servicios de TV con internet y telefonia fija para una conectividad superior en todo momento.",
