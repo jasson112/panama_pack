@@ -326,6 +326,11 @@
         width: 100%;
         margin: auto;
         background-color: #E2E1E1;
+        display: none;
+
+        &.active {
+          display: block;
+        }
         
         p{
           font-family: $font-book;

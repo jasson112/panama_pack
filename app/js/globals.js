@@ -46,7 +46,13 @@ function openPlanUpgraded(element){
   });
   steps.classList.add("active");
   element.classList.add('active');
-  console.log(element.dataset.index);
+
+  [...stepPlane].forEach((el) => {
+    el.classList.remove('active');
+  });
+
+  let planSelected = Number(element.dataset.index) - 1;
+  stepPlane[planSelected].classList.add('active');
   stepTwo.classList.add('active');
 }
 
