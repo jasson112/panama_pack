@@ -35,11 +35,11 @@ module.exports = {
         },
       ],
     }),
-    new HtmlWebpackPlugin({
+    /* new HtmlWebpackPlugin({
       inject: true,
       template: "./templates/layout.jinja2",
       filename: "index.html",
-    }),
+    }), */
     new ManifestPlugin(),
   ],
   output: {
@@ -60,7 +60,6 @@ module.exports = {
   },
   module: {
     rules: [
-      
       {
         enforce: "pre",
         test: /\.js$/,
