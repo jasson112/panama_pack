@@ -18,6 +18,7 @@ new Swiper(".swiper-container", {
   preventClicksPropagation: false,
   pagination: {
     el: ".swiper-pagination",
+    clickable: true,
   },
 });
 
@@ -36,11 +37,11 @@ upgradePlan.addEventListener("click", openUpgradeSteps);
 });
 closeSteps.addEventListener('click', closeUpgradeSteps);
 
-function openUpgradeSteps(){
+function openUpgradeSteps() {
   steps.classList.add("open");
 }
 
-function openPlanUpgraded(element){
+function openPlanUpgraded(element) {
   [...planToUpgrade].forEach((plan) => {
     plan.classList.remove('active');
   });
@@ -56,7 +57,7 @@ function openPlanUpgraded(element){
   stepTwo.classList.add('active');
 }
 
-function closeUpgradeSteps(){
+function closeUpgradeSteps() {
   [...planToUpgrade].forEach((plan) => {
     plan.classList.remove('active');
   });
