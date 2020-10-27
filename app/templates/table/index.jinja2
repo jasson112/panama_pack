@@ -1,152 +1,85 @@
 {% extends "layout.jinja2" %} {% block content %}
-<section class="container">
+<section class="container" id="myTable">
   <article class="tip">
+    {% for item in data.table.quote %}
     <div class="content">
-      <img src="/static/dist/images/check-orange.png" />
-      <p class="name">Incluido en el plan</p>
+      <img src="{{ item.image }}" />
+      <p class="name">{{ item.name }}</p>
     </div>
-    <div class="content">
-      <img src="/static/dist/images/price-orange.png" />
-      <p class="name">
-        Adquiérelo con un costo <br />
-        adicional
-      </p>
-    </div>
+    {% endfor %}
   </article>
   <table class="table">
     <thead>
       <tr>
         <th></th>
+        {% for plan in data.table.planes %}
         <th>
-          ESENCIAL<br />
-          <span class="price"> $ 39.99 </span>
+          {{ plan.name }}<br />
+          <span class="price"> {{ plan.price }} </span>
         </th>
-        <th>
-          AVANZADO<br />
-          <span class="price"> $ 49.99 </span>
-        </th>
-        <th>
-          PREMIUM<br />
-          <span class="price"> $ 70.99 </span>
-        </th>
+        {% endfor %}
       </tr>
     </thead>
     <tbody>
+      {% for feature in data.table.features %}
       <tr>
-        <td class="category">Internet</td>
-        <td>150 megas</td>
-        <td>150 megas</td>
-        <td>150 megas</td>
-      </tr>
-      <tr>
-        <td class="category">Fixed</td>
+        <td class="category">
+          {{ feature.title }}
+          <p class="subtitle">
+            {{ feature.description }}
+          </p>
+        </td>
+        {% set myIndex = loop.index - 1 %} {% for plan in data.table.planes %}
+        {% if myIndex > 1 %}
+        <td
+          class="{% if data.table.planes[loop.index - 1][myIndex] %}orange{% else %}price{% endif %}"
+        ></td>
+        {% else %}
         <td>
-          <div class="fit">200 minutos locales red Cable & Wireless</div>
+          {{ data.table.planes[loop.index - 1][myIndex] }}
         </td>
-        <td>
-          <div class="fit">200 minutos locales red Cable & Wireless</div>
-        </td>
-        <td>
-          <div class="fit">200 minutos locales red Cable & Wireless</div>
-        </td>
+        {% endif %} {% endfor %}
       </tr>
-      <tr>
-        <td class="category">
-          Almacenamiento <br />en la Nube
-          <p class="subtitle">
-            2TB de espacio para que puedas acceder a todos tus documentos, fotos
-            y videos en cualquier dispositivo compatible (PC, Android, iPhone,
-            etc).
-          </p>
-        </td>
-        <td class="orange"></td>
-        <td class="orange"></td>
-        <td class="orange"></td>
-      </tr>
-      <tr>
-        <td class="category">
-          My UC <br />Soffphone
-          <p class="subtitle">
-            Accede a tu teléfono fijo desde donde estés para que no pierdas
-            ninguna llamada y mantente comunicado con tu negocio.
-          </p>
-        </td>
-        <td class="price"></td>
-        <td class="orange"></td>
-        <td class="orange"></td>
-      </tr>
-      <tr>
-        <td class="category">
-          TV
-          <p class="subtitle">
-            Televisión inalámbrica con acceso a programación local e
-            internacional para darle a tu negocio un ambiente diferente.
-          </p>
-        </td>
-        <td class="price"></td>
-        <td class="price"></td>
-        <td class="orange"></td>
-      </tr>
-      <tr>
-        <td class="category">
-          Móvil
-          <p class="subtitle">
-            Comunícate con tus clientes a través de la red con mejor señal del
-            país y planes de data ilimitada.
-          </p>
-        </td>
-        <td class="price"></td>
-        <td class="price"></td>
-        <td class="price"></td>
-      </tr>
+      {% endfor %}
     </tbody>
   </table>
 </section>
 <section class="container hidden">
-  <h2 class="title">¿SABES QUÉ PLAN LE CONVIENE MÁS A TU EMPRESA?</h2>
+  <h2 class="title">{{ data.planes.main_title }}</h2>
   <!-- Swiper -->
   <div class="swiper-container">
     <div class="swiper-wrapper">
-      <div class="swiper-slide slide-container">
-        <img src="/static/dist/images/escencial.png" />
+    {% for plancito in data.planes.lista %}
+    <div class="swiper-slide slide-container">
+        <img src="{{ plancito.image }}" />
         <div>
           <article class="info">
             {% include "table/arrow-left.svg" %} {% include
             "table/arrow-rigth.svg" %}
-            <h3 class="info__title">ESENCIAL</h3>
+            <h3 class="info__title">{{ plancito.name }}</h3>
             <p class="info__desc">
-              Con este plan podrás cubrir las necesidades básicas de tu negocio
-              en cuanto a internet y telefonía fija. Es ideal para empresas con
-              un volumen bajo de llamadas.
+              {{ plancito.description }}
             </p>
-            <button class="button">DESCUBRE MÁS</button>
+            <button class="button discover">{{ data.descrubre_mas }}</button>
           </article>
         </div>
         <div class="showtime">
           <div class="showtime__info">
-            <h3 class="info__title">ESENCIAL</h3>
+            <h3 class="info__title">{{ plancito.name }}</h3>
             <p class="info__desc">
-              Nuestro plan más completo ya que se adapta a cualquier tipo de
-              negocio e integra servicios de TV con internet y telefonia fija
-              para una conectividad superior en todo momento.
+              {{ plancito.showtime.description }}
             </p>
           </div>
           <div class="showtime__features">
             <ul>
+              {% for feature in plancito.showtime.features %}
               <li>
                 <img src="/static/dist/images/check-white.png" />
                 <p>
-                  Disfruta de canales variados en tu local que se adaptan a los
-                  gustos de tus clientes
+                  {{feature}}
                 </p>
               </li>
-              <li>
-                <img src="/static/dist/images/check-white.png" />
-                <p>
-                  Disfruta de canales variados en tu local que se adaptan a los
-                  gustos de tus clientes
-                </p>
-              </li>
+              {% endfor %}
             </ul>
           </div>
           <div class="showtime__back">
@@ -157,21 +90,29 @@
             <div class="showtime__bubble">
               <img id="close" src="/static/dist/images/x.png" />
               <img class="arrow" src="/static/dist/images/bubble-arrow.png" />
-              <h3 class="showtime__bubble-title">¿Necesitas ayuda?</h3>
+              <h3 class="showtime__bubble-title">{{ data.ayuda.title }}</h3>
               <p class="showtime__bubble-desc">
-                Puedes contactarte con un asesor si necesitas ayuda
-                personalizada para selecionar un plan
+                {{ data.ayuda.description }}
               </p>
-              <button class="button">CONTACTAR ASESOR</button>
+              <a class="button" href="{{ plancito.link }}">{{ data.contactar_asesor }}</a>
             </div>
           </div>
         </div>
       </div>
-      <div class="swiper-slide slide-container">Slide 2</div>
-      <div class="swiper-slide slide-container">Slide 3</div>
+    {% endfor %}
+      
     </div>
   </div>
   <!-- Add Pagination -->
   <div class="swiper-pagination"></div>
+</section>
+<section class="full">
+  <article class="medida">
+    <h2 class="medida__title">{{ data.byob.title }}</h2>
+    <p class="medida__desc">
+    {{ data.byob.description }}
+    </p>
+    <a class="button" href="{{ data.byob.link }}">{{ data.byob.button }}</a>
+  </article>
 </section>
 {% endblock %}

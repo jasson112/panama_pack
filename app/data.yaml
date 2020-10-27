@@ -1,0 +1,118 @@
+table:
+  quote:
+    - {
+        image: "/static/dist/images/check-orange.png",
+        name: "Incluido en el plan",
+      }
+    - {
+        image: "/static/dist/images/price-orange.png",
+        name: "Adquiérelo con un costo <br /> adicional",
+      }
+  features:
+    - { title: "Internet" }
+    - { title: "Fixed" }
+    - {
+        title: "Almacenamiento <br />en la Nube",
+        description: "2TB de espacio para que puedas acceder a todos tus documentos, fotos y videos en cualquier dispositivo compatible (PC, Android, iPhone, etc).",
+      }
+    - {
+        title: "My UC <br />Soffphone",
+        description: "Accede a tu teléfono fijo desde donde estés para que no pierdas ninguna llamada y mantente comunicado con tu negocio.",
+      }
+    - {
+        title: "TV",
+        description: "Televisión inalámbrica con acceso a programación local e internacional para darle a tu negocio un ambiente diferente.",
+      }
+    - {
+        title: "Móvil",
+        description: "Comunícate con tus clientes a través de la red con mejor señal del país y planes de data ilimitada.",
+      }
+  planes:
+    - {
+        name: "ESENCIAL",
+        price: "$ 39.99",
+        0: "150 megas",
+        1: "200 minutos locales red Cable & Wireless",
+        2: true,
+        3: false,
+        4: false,
+        5: false,
+      }
+    - {
+        name: "AVANZADO",
+        price: "$ 49.99",
+        0: "150 megas",
+        1: "200 minutos locales red Cable & Wireless",
+        2: true,
+        3: true,
+        4: false,
+        5: false,
+      }
+    - {
+        name: "PREMIUM",
+        price: "$ 70.99",
+        0: "150 megas",
+        1: "200 minutos locales red Cable & Wireless",
+        2: true,
+        3: true,
+        4: true,
+        5: false,
+      }
+planes:
+  main_title: "¿SABES QUÉ PLAN LE CONVIENE MÁS A TU EMPRESA?"
+  lista:
+    - {
+        image: "/static/dist/images/escencial.png",
+        name: "ESENCIAL",
+        link: "http://google.com",
+        description: "Con este plan podrás cubrir las necesidades básicas de tu negocio en cuanto a internet y telefonía fija. Es ideal para empresas con un volumen bajo de llamadas.",
+        showtime:
+          {
+            description: "Nuestro plan más completo ya que se adapta a cualquier tipo de negocio e integra servicios de TV con internet y telefonia fija para una conectividad superior en todo momento.",
+            features:
+              {
+                "1Disfruta de canales variados en tu local que se adaptan a los gustos de tus clientes",
+                "Disfruta de canales variados en tu local que se adaptan a los gustos de tus clientes",
+              },
+          },
+      }
+    - {
+        image: "/static/dist/images/escencial.png",
+        name: "ESENCIAL",
+        link: "http://google.com",
+        description: "Con este plan podrás cubrir las necesidades básicas de tu negocio en cuanto a internet y telefonía fija. Es ideal para empresas con un volumen bajo de llamadas.",
+        showtime:
+          {
+            description: "Nuestro plan más completo ya que se adapta a cualquier tipo de negocio e integra servicios de TV con internet y telefonia fija para una conectividad superior en todo momento.",
+            features:
+              {
+                "1Disfruta de canales variados en tu local que se adaptan a los gustos de tus clientes",
+                "Disfruta de canales variados en tu local que se adaptan a los gustos de tus clientes",
+              },
+          },
+      }
+    - {
+        image: "/static/dist/images/escencial.png",
+        name: "ESENCIAL",
+        link: "http://google.com",
+        description: "Con este plan podrás cubrir las necesidades básicas de tu negocio en cuanto a internet y telefonía fija. Es ideal para empresas con un volumen bajo de llamadas.",
+        showtime:
+          {
+            description: "Nuestro plan más completo ya que se adapta a cualquier tipo de negocio e integra servicios de TV con internet y telefonia fija para una conectividad superior en todo momento.",
+            features:
+              {
+                "1Disfruta de canales variados en tu local que se adaptan a los gustos de tus clientes",
+                "Disfruta de canales variados en tu local que se adaptan a los gustos de tus clientes",
+              },
+          },
+      }
+descrubre_mas: "DESCUBRE MÁS"
+ayuda:
+  title: "¿Necesitas ayuda?"
+  description: "Puedes contactarte con un asesor si necesitas ayuda personalizada para selecionar un plan"
+contactar_asesor: "CONTACTAR ASESOR"
+byob:
+  title: "CREA UN PLAN A TU MEDIDA"
+  description: "Selecciona los productos y servicios que mejor se adapten a tu modelo de negocio."
+  button: "EMPECEMOS"
+  link: "google.com"
