@@ -64,7 +64,7 @@ planes:
     - {
         image: "/static/dist/images/escencial.png",
         name: "ESENCIAL",
-        link: "http://google.com",
+        link: "https://qa-mycwc.cs44.force.com/ecommerce/s/?bundleId=PR_ESSENTIAL",
         description: "Con este plan podrás cubrir las necesidades básicas de tu negocio en cuanto a internet y telefonía fija. Es ideal para empresas con un volumen bajo de llamadas. ",
         showtime:
           {
@@ -77,9 +77,9 @@ planes:
           },
       }
     - {
-        image: "/static/dist/images/escencial.png",
+        image: "/static/dist/images/avanzado.png",
         name: "AVANZADO",
-        link: "http://google.com",
+        link: "https://qa-mycwc.cs44.force.com/ecommerce/s/?bundleId=PR_ADVANCED",
         description: "Perfecto para empresas que necesitan una mayor conectividad con sus clientes y proveedores. La idea es que no pierdas ninguna llamada y puedas ofrecer una mejor atención al cliente.",
         showtime:
           {
@@ -92,9 +92,9 @@ planes:
           },
       }
     - {
-        image: "/static/dist/images/escencial.png",
+        image: "/static/dist/images/premium.png",
         name: "PREMIUM",
-        link: "http://google.com",
+        link: "https://qa-mycwc.cs44.force.com/ecommerce/s/?bundleId=PR_PREMIUM",
         description: "Nuestro plan más completo ya que se adapta a cualquier tipo de negocio e integra servicios de TV con internet y telefonia fija para una conectividad superior en todo momento.",
         showtime:
           {
