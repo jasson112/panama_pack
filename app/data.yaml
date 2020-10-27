@@ -282,7 +282,7 @@ descrubre_mas: "DESCUBRE MÁS"
 ayuda:
   title: "¿Necesitas ayuda?"
   description: "Si todavía tienes dudas acerca del plan que mejor se ajuste a tus necesidades nuestros asesores te contactarán para brindarte ayuda personalizada."
-contactar_asesor: "SOLICITAR MÁS INFORMACIÓN"
+contactar_asesor: "CONTACTAR ASESOR"
 byob:
   title: "CREA UN PLAN A TU MEDIDA"
   description: "Selecciona los productos y servicios que mejor se adapten a tu modelo de negocio."
