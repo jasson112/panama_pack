@@ -26,9 +26,9 @@ class Jinjasset():
             for p in data:
                 extension = os.path.splitext(data[p])[1]
                 if(extension == ".js"):
-                    my_js.append('<script src="{0}" type="module"></script>'.format(dist_folder + "/" + data[p]))
+                    my_js.append('<script src="{0}" type="module"></script>'.format(dist_folder[1:] + "/" + data[p]))
                 elif(extension == ".css"):
-                    my_styles.append('<link rel=stylesheet type=text/css href="{0}">'.format(dist_folder + data[p]))
+                    my_styles.append('<link rel=stylesheet type=text/css href="{0}">'.format(dist_folder[1:] + data[p]))
         if who == 0:
             return "".join(my_styles)
         elif who == 1:

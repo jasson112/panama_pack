@@ -486,7 +486,7 @@ a.button {
     }
   }
 }
-@include respond("desktop-large") {
+@include respond("desktop") {
   #myTable {
     display: block;
   }
