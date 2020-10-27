@@ -2,6 +2,7 @@ from flask import render_template
 from flask import current_app as app
 import yaml
 
+
 @app.route('/', methods=['GET'])
 def home():
     """Homepage."""
