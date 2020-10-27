@@ -1,183 +1,177 @@
 prices_header:
   title: "PLANES PARA IMPULSAR TU NEGOCIO"
   description: "Queremos ser tu aliado, por eso creamos una experiencia única para ti y tus clientes. Ofrecemos lo último en tecnología a los mejores precios, así te ayudamos a impulsar tu negocio aún más lejos."
-  image: "/static/dist/images/prices_header.png"
+  image: "static/dist/images/prices_header.png"
 
 planes_basicos:
   - {
       name: "ESENCIAL",
       description: "Pensado para empresas en crecimiento con equipos pequeños que necesitan estar conectados con sus clientes.",
       price: "39.99",
-      caracteristicas: [
+      caracteristicas:
+        [
           {
-            image: "/static/dist/images/wifi_icon.png",
-            text: "150 megas internet"
+            image: "static/dist/images/wifi_icon.png",
+            text: "150 megas internet",
           },
           {
-            image: "/static/dist/images/wifi_icon.png",
-            text: "200 minutos locales red Cable & Wireless"
+            image: "static/dist/images/wifi_icon.png",
+            text: "200 minutos locales red Cable & Wireless",
           },
           {
-            image: "/static/dist/images/wifi_icon.png",
-            text: "Almacenamiento en la Nube"
-          }
-        ]
+            image: "static/dist/images/wifi_icon.png",
+            text: "Almacenamiento en la Nube",
+          },
+        ],
     }
   - {
       name: "AVANZADO",
       description: "Creado para empresas que necesitan libertad y flexibilidad en telefonía fija.",
       price: "49.99",
-      caracteristicas: [
+      caracteristicas:
+        [
           {
-            image: "/static/dist/images/wifi_icon.png",
-            text: "150 megas internet"
+            image: "static/dist/images/wifi_icon.png",
+            text: "150 megas internet",
           },
           {
-            image: "/static/dist/images/wifi_icon.png",
-            text: "Minutos locales y nacionales ilimitados"
+            image: "static/dist/images/wifi_icon.png",
+            text: "Minutos locales y nacionales ilimitados",
           },
+          { image: "static/dist/images/wifi_icon.png", text: "MyUC Softphone" },
           {
-            image: "/static/dist/images/wifi_icon.png",
-            text: "MyUC Softphone"
+            image: "static/dist/images/wifi_icon.png",
+            text: "Almacenamiento en la Nube",
           },
-          {
-            image: "/static/dist/images/wifi_icon.png",
-            text: "Almacenamiento en la Nube"
-          }
-        ]
+        ],
     }
   - {
       name: "PREMIUM",
       description: "Diseñado para ofrecerle a tu negocio lo último en tecnología y televisión para que siempre estés conectado con tus clientes.",
       price: "70.99",
-      caracteristicas: [
+      caracteristicas:
+        [
           {
-            image: "/static/dist/images/wifi_icon.png",
-            text: "150 megas internet"
+            image: "static/dist/images/wifi_icon.png",
+            text: "150 megas internet",
           },
           {
-            image: "/static/dist/images/wifi_icon.png",
-            text: "Minutos locales y nacionales ilimitados"
+            image: "static/dist/images/wifi_icon.png",
+            text: "Minutos locales y nacionales ilimitados",
           },
+          { image: "static/dist/images/wifi_icon.png", text: "MyUC Softphone" },
           {
-            image: "/static/dist/images/wifi_icon.png",
-            text: "MyUC Softphone"
+            image: "static/dist/images/wifi_icon.png",
+            text: "Almacenamiento en la Nube",
           },
-          {
-            image: "/static/dist/images/wifi_icon.png",
-            text: "Almacenamiento en la Nube"
-          },
-          {
-            image: "/static/dist/images/wifi_icon.png",
-            text: "TV Básica"
-          }
-        ]
+          { image: "static/dist/images/wifi_icon.png", text: "TV Básica" },
+        ],
     }
-  
+
 mejorar_planes:
   title: "¿Necesitas más? Pásate a un plan +"
   description: "Nuestros planes + duplican la velocidad hasta 300 megas y te permiten añadir planes móviles con data ilimitada por:"
   add_price: "26"
   button: "MEJORA TU PLAN"
 
-steps: 
+steps:
   stepOne: "Seleciona el plan al que le quieres duplicar la velocidad de internet  y adiciona el plan mobile."
   stepTwo: "Verifica los nuevos beneficios y contacta al asesor para contratar tu plan"
-  planes: 
+  planes:
     - {
         index: "1",
         name: "ESENCIAL",
         price: "65.99",
-        caracteristicas: [
-          {
-            image: "/static/dist/images/wifi_icon.png",
-            text: "300 megas internet"
-          },
-          {
-            image: "/static/dist/images/wifi_icon.png",
-            text: "200 minutos locales red Cable & Wireless	"
-          },
-          {
-            image: "/static/dist/images/wifi_icon.png",
-            text: "Almacenamiento en la Nube"
-          },
-          {
-            image: "/static/dist/images/wifi_icon.png",
-            text: "Plan Data sin Límites"
-          }
-        ]
+        caracteristicas:
+          [
+            {
+              image: "static/dist/images/wifi_icon.png",
+              text: "300 megas internet",
+            },
+            {
+              image: "static/dist/images/wifi_icon.png",
+              text: "200 minutos locales red Cable & Wireless	",
+            },
+            {
+              image: "static/dist/images/wifi_icon.png",
+              text: "Almacenamiento en la Nube",
+            },
+            {
+              image: "static/dist/images/wifi_icon.png",
+              text: "Plan Data sin Límites",
+            },
+          ],
       }
     - {
         index: "2",
         name: "AVANZADO",
         price: "75.99",
-        caracteristicas: [
-          {
-            image: "/static/dist/images/wifi_icon.png",
-            text: "300 megas internet"
-          },
-          {
-            image: "/static/dist/images/wifi_icon.png",
-            text: "Minutos locales y nacionales ilimitados"
-          },
-          {
-            image: "/static/dist/images/wifi_icon.png",
-            text: "Almacenamiento en la Nube"
-          },
-          {
-            image: "/static/dist/images/wifi_icon.png",
-            text: "MyUC Softphone"
-          },
-          {
-            image: "/static/dist/images/wifi_icon.png",
-            text: "Plan Data sin Límites"
-          }
-        ]
+        caracteristicas:
+          [
+            {
+              image: "static/dist/images/wifi_icon.png",
+              text: "300 megas internet",
+            },
+            {
+              image: "static/dist/images/wifi_icon.png",
+              text: "Minutos locales y nacionales ilimitados",
+            },
+            {
+              image: "static/dist/images/wifi_icon.png",
+              text: "Almacenamiento en la Nube",
+            },
+            {
+              image: "static/dist/images/wifi_icon.png",
+              text: "MyUC Softphone",
+            },
+            {
+              image: "static/dist/images/wifi_icon.png",
+              text: "Plan Data sin Límites",
+            },
+          ],
       }
     - {
         index: "3",
         name: "PREMIUM",
         price: "96.99",
-        caracteristicas: [
-          {
-            image: "/static/dist/images/wifi_icon.png",
-            text: "300 megas internet"
-          },
-          {
-            image: "/static/dist/images/wifi_icon.png",
-            text: "Minutos locales y nacionales ilimitados"
-          },
-          {
-            image: "/static/dist/images/wifi_icon.png",
-            text: "Almacenamiento en la Nube"
-          },
-          {
-            image: "/static/dist/images/wifi_icon.png",
-            text: "MyUC Softphone"
-          },
-          {
-            image: "/static/dist/images/wifi_icon.png",
-            text: "Plan Data sin Límites"
-          },
-          {
-            image: "/static/dist/images/wifi_icon.png",
-            text: "TV Básica"
-          }
-        ]
+        caracteristicas:
+          [
+            {
+              image: "static/dist/images/wifi_icon.png",
+              text: "300 megas internet",
+            },
+            {
+              image: "static/dist/images/wifi_icon.png",
+              text: "Minutos locales y nacionales ilimitados",
+            },
+            {
+              image: "static/dist/images/wifi_icon.png",
+              text: "Almacenamiento en la Nube",
+            },
+            {
+              image: "static/dist/images/wifi_icon.png",
+              text: "MyUC Softphone",
+            },
+            {
+              image: "static/dist/images/wifi_icon.png",
+              text: "Plan Data sin Límites",
+            },
+            { image: "static/dist/images/wifi_icon.png", text: "TV Básica" },
+          ],
       }
 
-compare_planes: 
+compare_planes:
   title: "¿NO ESTÁS SEGURO DE CUÁL PLAN ELEGIR?"
   button: "COMPARA NUESTROS PLANES"
 
 table:
   quote:
     - {
-        image: "/static/dist/images/check-orange.png",
+        image: "static/dist/images/check-orange.png",
         name: "Incluido en el plan",
       }
     - {
-        image: "/static/dist/images/price-orange.png",
+        image: "static/dist/images/price-orange.png",
         name: "Adquiérelo con un costo <br /> adicional",
       }
   features:
@@ -234,7 +228,7 @@ planes:
   main_title: "¿SABES QUÉ PLAN LE CONVIENE MÁS A TU EMPRESA?"
   lista:
     - {
-        image: "/static/dist/images/escencial.png",
+        image: "static/dist/images/escencial.png",
         name: "ESENCIAL",
         link: "http://google.com",
         description: "Con este plan podrás cubrir las necesidades básicas de tu negocio en cuanto a internet y telefonía fija. Es ideal para empresas con un volumen bajo de llamadas. ",
@@ -249,7 +243,7 @@ planes:
           },
       }
     - {
-        image: "/static/dist/images/escencial.png",
+        image: "static/dist/images/escencial.png",
         name: "AVANZADO",
         link: "http://google.com",
         description: "Perfecto para empresas que necesitan una mayor conectividad con sus clientes y proveedores. La idea es que no pierdas ninguna llamada y puedas ofrecer una mejor atención al cliente.",
@@ -264,7 +258,7 @@ planes:
           },
       }
     - {
-        image: "/static/dist/images/escencial.png",
+        image: "static/dist/images/escencial.png",
         name: "PREMIUM",
         link: "http://google.com",
         description: "Nuestro plan más completo ya que se adapta a cualquier tipo de negocio e integra servicios de TV con internet y telefonia fija para una conectividad superior en todo momento.",

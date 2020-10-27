@@ -3,9 +3,9 @@
   overflow: visible;
   padding: 30px 0;
 
-  &::after{
-    content: '';
-    background-color: #F8F8F8;
+  &::after {
+    content: "";
+    background-color: #f8f8f8;
     position: absolute;
     width: 100%;
     left: 0;
@@ -21,8 +21,8 @@
     .prices__header__content {
       width: 100%;
       order: 2;
-      
-      .prices__header-title{
+
+      .prices__header-title {
         color: $fb-primary;
         font-size: 32px;
         letter-spacing: 0.09px;
@@ -31,7 +31,7 @@
       }
 
       .prices__header-description {
-        color: #63666A;
+        color: #63666a;
         font-size: 22px;
         line-height: 24px;
         font-family: $font-book;
@@ -42,10 +42,10 @@
     figure {
       order: 1;
       width: 100%;
-      
-      img{
+
+      img {
         width: auto;
-        max-width: 100%;  
+        max-width: 100%;
       }
     }
   }
@@ -64,7 +64,7 @@
       width: 100%;
       margin-bottom: 50px;
       padding-bottom: 20px;
-      background-color: #E2E1E1;
+      background-color: #e2e1e1;
       position: relative;
       overflow: visible;
       font-family: $font-book;
@@ -79,7 +79,7 @@
       }
 
       .plans__tabs-description {
-        color: #63666A;
+        color: #63666a;
         text-align: center;
         width: 85%;
         margin: 10px auto;
@@ -90,17 +90,15 @@
       .plans__tabs-price {
         text-align: center;
         font-size: 43px;
-        color: #004B87;
+        color: #004b87;
         width: 100%;
         display: inline-flex;
         justify-content: center;
         font-family: $font-bold;
 
-
-        
         span {
           font-size: 15px;
-          color: #63666A;
+          color: #63666a;
           line-height: 25px;
           margin-right: 5px;
           font-family: $font-book;
@@ -122,10 +120,9 @@
             margin: 0;
             padding-left: 15px;
             font-family: $font-book;
-            color: #63666A;
+            color: #63666a;
             font-size: 20px;
             line-height: 35.45px;
-
           }
         }
       }
@@ -145,18 +142,18 @@
         display: inline-block;
         text-decoration: none;
         text-align: center;
-        clip-path: polygon(100% 0,5px 3px,0 43px,98.5% 48px);
+        clip-path: polygon(100% 0, 5px 3px, 0 43px, 98.5% 48px);
       }
     }
   }
 }
 
-.upgrade__plan{
+.upgrade__plan {
   margin: 60px 0 50px;
 
-  .upgrade__plan__content{
-    background-color: #EBEBEB;
-    background-image: url('/static/dist/images/cohete.png');
+  .upgrade__plan__content {
+    background-color: #ebebeb;
+    background-image: url("https://negocios.masmovilpanama.com/usertest/static/dist/images/cohete.png");
     background-position: 100% 100%;
     background-repeat: no-repeat;
     background-size: contain;
@@ -175,7 +172,7 @@
     .upgrade__plan__content-description {
       font-family: $font-book;
       font-size: 20px;
-      color: #63666A;
+      color: #63666a;
       line-height: 25px;
       width: 100%;
     }
@@ -189,18 +186,18 @@
       margin: auto;
       padding-bottom: 130px;
 
-      figure{
+      figure {
         width: 100%;
       }
 
-      .upgrade__plan__benefits-price{
+      .upgrade__plan__benefits-price {
         font-family: $font-book;
         font-size: 28px;
         color: #323232;
         width: 100%;
         text-align: center;
 
-        span{
+        span {
           font-family: $font-bold;
           font-size: 40px;
         }
@@ -217,35 +214,35 @@
         display: inline-block;
         text-decoration: none;
         text-align: center;
-        clip-path: polygon(100% 0,5px 3px,0 43px,98.5% 48px);
+        clip-path: polygon(100% 0, 5px 3px, 0 43px, 98.5% 48px);
       }
     }
   }
 
-  .upgrade__plan__steps{
+  .upgrade__plan__steps {
     margin-top: 40px;
     padding: 45px 25px;
-    background-color: #F8F8F8;
+    background-color: #f8f8f8;
     background-position: 100% 100%;
     background-repeat: no-repeat;
     flex-wrap: wrap;
-    justify-content: space-between; 
+    justify-content: space-between;
     display: none;
     position: relative;
-    
-    &.open{
+
+    &.open {
       display: flex;
     }
-    
+
     &.active {
       background-position: 50% 100%;
     }
 
-    .upgrade__plan__steps-close{
+    .upgrade__plan__steps-close {
       position: absolute;
       width: 20px;
       height: 20px;
-      background-image: url('/static/dist/images/close_icon.png');
+      background-image: url("https://negocios.masmovilpanama.com/usertest/static/dist/images/close_icon.png");
       background-position: center;
       background-repeat: no-repeat;
       top: 20px;
@@ -262,14 +259,14 @@
       margin: 0;
       font-family: $font-light;
       font-size: 25px;
-      color: #63666A;
+      color: #63666a;
       line-height: 30px;
       position: relative;
       padding-left: 50px;
 
       .upgrade__plan-number {
         color: #fff;
-        background: #FF4713;
+        background: #ff4713;
         font-family: $font-bold;
         font-size: 31px;
         position: absolute;
@@ -284,7 +281,7 @@
     }
 
     .upgrade__plan__steps-one {
-      .upgrade__plan__one-list{
+      .upgrade__plan__one-list {
         list-style: none;
         width: 70%;
         margin: auto;
@@ -306,23 +303,23 @@
           font-size: 24px;
 
           &:hover,
-          &.active{
-            background-color: #E2E1E1;
+          &.active {
+            background-color: #e2e1e1;
             font-family: $font-bold;
           }
         }
       }
     }
 
-    .upgrade__plan__steps-two{
+    .upgrade__plan__steps-two {
       margin-top: 25px;
       display: none;
 
-      &.active{
+      &.active {
         display: block;
       }
 
-      .upgrade__plan__two-plan{
+      .upgrade__plan__two-plan {
         width: 100%;
         margin: auto;
         background-color: #E2E1E1;
@@ -335,7 +332,7 @@
         p{
           font-family: $font-book;
           font-size: 15px;
-          color: #63666A;
+          color: #63666a;
           line-height: 30px;
           width: 80%;
           margin: auto;
@@ -345,22 +342,22 @@
           background-color: $fb-primary;
           font-family: $font-book;
           font-size: 30px;
-          color: #FFFFFF;
+          color: #ffffff;
           display: flex;
           justify-content: center;
           align-items: center;
 
-          .upgrade__plan__two-plus{
+          .upgrade__plan__two-plus {
             font-family: $font-bold;
             font-size: 56px;
             line-height: 1;
           }
         }
 
-        .upgrade__plan__two-price{
+        .upgrade__plan__two-price {
           font-family: $font-bold;
           font-size: 30px;
-          color: #004B87;
+          color: #004b87;
           text-align: center;
           margin-bottom: 25px;
         }
@@ -371,18 +368,18 @@
           width: 80%;
           margin: auto;
           padding: 0;
-  
+
           .upgrade__plan__two-spec {
             display: flex;
             align-items: flex-start;
             margin-bottom: 15px;
-  
+
             p {
               margin: 0;
               padding-left: 15px;
               font-family: $font-book;
               font-size: 20px;
-              color: #63666A;
+              color: #63666a;
               line-height: 23px;
             }
           }
@@ -405,16 +402,15 @@
           display: inline-block;
           text-decoration: none;
           text-align: center;
-          clip-path: polygon(100% 0,5px 3px,0 43px,98.5% 48px);
+          clip-path: polygon(100% 0, 5px 3px, 0 43px, 98.5% 48px);
         }
       }
     }
-
   }
 }
 
 .compare__plan {
-  background-image: url('/static/dist/images/banner_compare_planes.png');
+  background-image: url("https://negocios.masmovilpanama.com/usertest/static/dist/images/banner_compare_planes.png");
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -428,10 +424,10 @@
     .compare__plan-content {
       width: 50%;
 
-      h3{
+      h3 {
         font-family: $font-book;
         font-size: 40px;
-        color: #FFFFFF;
+        color: #ffffff;
         letter-spacing: 0;
         line-height: 53px;
       }
@@ -450,14 +446,14 @@
         display: inline-block;
         text-decoration: none;
         text-align: center;
-        clip-path: polygon(100% 0,5px 3px,0 43px,98.5% 48px);
+        clip-path: polygon(100% 0, 5px 3px, 0 43px, 98.5% 48px);
       }
     }
   }
 }
 
 .business_value {
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
 
   .business_value-title {
     color: $fb-primary;
@@ -468,7 +464,7 @@
     padding: 30px 0;
   }
 
-  .business_value__list{
+  .business_value__list {
     list-style: none;
     padding: 0;
     display: flex;
@@ -489,11 +485,11 @@
         line-height: 28px;
       }
 
-      .business_value__item-text{
+      .business_value__item-text {
         text-align: left;
         font-family: $font-light;
         font-size: 18px;
-        color: #63666A;
+        color: #63666a;
         letter-spacing: 0.05px;
         line-height: 20px;
       }
@@ -502,7 +498,7 @@
 }
 
 .success_stories {
-  .container{
+  .container {
     display: flex;
     flex-wrap: wrap;
 
@@ -513,22 +509,22 @@
       color: $fb-primary;
       text-align: center;
     }
-  
+
     figure {
       width: 100%;
-  
+
       img {
         width: auto;
         max-width: 100%;
       }
     }
-  
+
     .success_stories-content {
       padding: 25px 0;
       display: flex;
       align-items: center;
       width: 100%;
-  
+
       .success_stories-name {
         font-family: $font-bold;
         font-size: 16px;
@@ -537,7 +533,7 @@
         margin: 0;
         margin-top: 10px;
       }
-  
+
       .success_stories-job {
         font-family: $font-light;
         font-size: 16px;
@@ -545,11 +541,11 @@
         line-height: 18px;
         margin: 0;
       }
-  
+
       .success_stories-description {
         font-family: $font-book;
         font-size: 18px;
-        color: #63666A;
+        color: #63666a;
         line-height: 20px;
         padding-right: 20px;
       }
@@ -569,22 +565,22 @@ footer {
     padding: 25px 0;
     flex-wrap: wrap;
 
-    figure{
+    figure {
       height: 90px;
       width: 100%;
     }
 
-    .footer__content-info{
+    .footer__content-info {
       width: 100%;
 
-      .footer__content_title{
+      .footer__content_title {
         font-family: $font-book;
         font-size: 22px;
         margin: 0;
         margin-bottom: 10px;
       }
 
-      a{
+      a {
         color: #fff;
         text-decoration: none;
       }
@@ -602,20 +598,20 @@ footer {
       width: 100%;
     }
 
-    .footer__legal-all_rights{
+    .footer__legal-all_rights {
       order: 2;
     }
 
-    .footer__legal-privacy{
+    .footer__legal-privacy {
       order: 1;
       width: 60%;
     }
   }
-} 
+}
 
-@include respond(tablet){
+@include respond(tablet) {
   .prices__header {
-    &::after{
+    &::after {
       width: 75%;
       height: 115%;
     }
@@ -627,7 +623,7 @@ footer {
         order: 1;
         width: 60%;
 
-        .prices__header-title{
+        .prices__header-title {
           font-size: 40px;
           line-height: 60px;
           letter-spacing: 0.05;
@@ -647,8 +643,8 @@ footer {
   }
 
   .plans__tabs {
-    ul{
-      .plans__tabs-element{
+    ul {
+      .plans__tabs-element {
         width: 31%;
         margin-bottom: 0;
 
@@ -656,7 +652,7 @@ footer {
           font-size: 24px;
         }
 
-        .plans__tabs-description{
+        .plans__tabs-description {
           font-size: 18px;
           line-height: 25px;
         }
@@ -697,14 +693,14 @@ footer {
 
         figure,
         .upgrade__plan__benefits-price,
-        .button{
+        .button {
           width: 32%;
         }
       }
     }
 
     .upgrade__plan__steps {
-      background-image: url('/static/dist/images/steps_bg.png');
+      background-image: url("https://negocios.masmovilpanama.com/usertest/static/dist/images/steps_bg.png");
 
       .upgrade__plan__steps-one,
       .upgrade__plan__steps-two {
@@ -712,7 +708,7 @@ footer {
       }
 
       .upgrade__plan__steps-one {
-        .upgrade__plan__one-list{
+        .upgrade__plan__one-list {
           width: 55%;
         }
       }
@@ -720,7 +716,7 @@ footer {
       .upgrade__plan__steps-two {
         margin: 0;
 
-        .upgrade__plan__two-plan{
+        .upgrade__plan__two-plan {
           width: 75%;
         }
       }
@@ -732,7 +728,7 @@ footer {
   }
 
   .business_value {
-    .business_value-title{
+    .business_value-title {
       font-size: 40px;
     }
 
@@ -747,7 +743,7 @@ footer {
 
   .success_stories {
     .container {
-      .success_stories-title{
+      .success_stories-title {
         order: 1;
       }
 
@@ -755,7 +751,7 @@ footer {
         width: 50%;
         order: 3;
       }
-  
+
       .success_stories-content {
         width: 50%;
         order: 2;
@@ -777,7 +773,7 @@ footer {
         width: 400px;
       }
 
-      .footer__content-info{
+      .footer__content-info {
         width: 20%;
       }
     }
@@ -787,11 +783,11 @@ footer {
         width: auto;
       }
 
-      .footer__legal-all_rights{
+      .footer__legal-all_rights {
         order: 1;
       }
-  
-      .footer__legal-privacy{
+
+      .footer__legal-privacy {
         order: 2;
         width: auto;
       }

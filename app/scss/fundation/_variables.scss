@@ -1,45 +1,53 @@
 // Fonts
 @font-face {
   font-family: "futuraPTLight";
-  src: url("/static/dist/fonts/FuturaPT/FuturaPTLight.eot");
-  src: url("/static/dist/fonts/FuturaPT/FuturaPTLight.eot")
+  src: url("https://negocios.masmovilpanama.com/usertest/static/dist/fonts/FuturaPT/FuturaPTLight.eot");
+  src: url("https://negocios.masmovilpanama.com/usertest/static/dist/fonts/FuturaPT/FuturaPTLight.eot")
       format("embedded-opentype"),
-    url("/static/dist/fonts/FuturaPT/FuturaPTLight.woff") format("woff"),
-    url("/static/dist/fonts/FuturaPT/FuturaPTLight.ttf") format("truetype"),
-    url("/static/dist/fonts/FuturaPT/FuturaPTLight.svg#FuturaPTBook")
+    url("https://negocios.masmovilpanama.com/usertest/static/dist/fonts/FuturaPT/FuturaPTLight.woff")
+      format("woff"),
+    url("https://negocios.masmovilpanama.com/usertest/static/dist/fonts/FuturaPT/FuturaPTLight.ttf")
+      format("truetype"),
+    url("https://negocios.masmovilpanama.com/usertest/static/dist/fonts/FuturaPT/FuturaPTLight.svg#FuturaPTBook")
       format("svg");
 }
 
 @font-face {
   font-family: "futuraPTBook";
-  src: url("/static/dist/fonts/FuturaPT/FuturaPTBook.eot");
-  src: url("/static/dist/fonts/FuturaPT/FuturaPTBook.eot")
+  src: url("https://negocios.masmovilpanama.com/usertest/static/dist/fonts/FuturaPT/FuturaPTBook.eot");
+  src: url("https://negocios.masmovilpanama.com/usertest/static/dist/fonts/FuturaPT/FuturaPTBook.eot")
       format("embedded-opentype"),
-    url("/static/dist/fonts/FuturaPT/FuturaPTBook.woff") format("woff"),
-    url("/static/dist/fonts/FuturaPT/FuturaPTBook.ttf") format("truetype"),
-    url("/static/dist/fonts/FuturaPT/FuturaPTBook.svg#FuturaPTBook")
+    url("https://negocios.masmovilpanama.com/usertest/static/dist/fonts/FuturaPT/FuturaPTBook.woff")
+      format("woff"),
+    url("https://negocios.masmovilpanama.com/usertest/static/dist/fonts/FuturaPT/FuturaPTBook.ttf")
+      format("truetype"),
+    url("https://negocios.masmovilpanama.com/usertest/static/dist/fonts/FuturaPT/FuturaPTBook.svg#FuturaPTBook")
       format("svg");
 }
 
 @font-face {
   font-family: "futuraPTMedium";
-  src: url("/static/dist/fonts/FuturaPT/FuturaPT-Medium.eot");
-  src: url("/static/dist/fonts/FuturaPT/FuturaPT-Medium.eot")
+  src: url("https://negocios.masmovilpanama.com/usertest/static/dist/fonts/FuturaPT/FuturaPT-Medium.eot");
+  src: url("https://negocios.masmovilpanama.com/usertest/static/dist/fonts/FuturaPT/FuturaPT-Medium.eot")
       format("embedded-opentype"),
-    url("/static/dist/fonts/FuturaPT/FuturaPT-Medium.woff") format("woff"),
-    url("/static/dist/fonts/FuturaPT/FuturaPT-Medium.ttf") format("truetype"),
-    url("/static/dist/fonts/FuturaPT/FuturaPT-Medium.svg#FuturaPTBook")
+    url("https://negocios.masmovilpanama.com/usertest/static/dist/fonts/FuturaPT/FuturaPT-Medium.woff")
+      format("woff"),
+    url("https://negocios.masmovilpanama.com/usertest/static/dist/fonts/FuturaPT/FuturaPT-Medium.ttf")
+      format("truetype"),
+    url("https://negocios.masmovilpanama.com/usertest/static/dist/fonts/FuturaPT/FuturaPT-Medium.svg#FuturaPTBook")
       format("svg");
 }
 
 @font-face {
   font-family: "futuraPTBold";
-  src: url("/static/dist/fonts/FuturaPT/FuturaPT-Bold.eot");
-  src: url("/static/dist/fonts/FuturaPT/FuturaPT-Bold.eot")
+  src: url("https://negocios.masmovilpanama.com/usertest/static/dist/fonts/FuturaPT/FuturaPT-Bold.eot");
+  src: url("https://negocios.masmovilpanama.com/usertest/static/dist/fonts/FuturaPT/FuturaPT-Bold.eot")
       format("embedded-opentype"),
-    url("/static/dist/fonts/FuturaPT/FuturaPT-Bold.woff") format("woff"),
-    url("/static/dist/fonts/FuturaPT/FuturaPT-Bold.ttf") format("truetype"),
-    url("/static/dist/fonts/FuturaPT/FuturaPT-Bold.svg#FuturaPTBook")
+    url("https://negocios.masmovilpanama.com/usertest/static/dist/fonts/FuturaPT/FuturaPT-Bold.woff")
+      format("woff"),
+    url("https://negocios.masmovilpanama.com/usertest/static/dist/fonts/FuturaPT/FuturaPT-Bold.ttf")
+      format("truetype"),
+    url("https://negocios.masmovilpanama.com/usertest/static/dist/fonts/FuturaPT/FuturaPT-Bold.svg#FuturaPTBook")
       format("svg");
 }
 
@@ -68,6 +76,6 @@ $blue-back: #154f83;
 $bubble-back: #333333;
 $ligth-gray: #ebebeb;
 $fb-primary: #ff4713;
-$fb-secondary: #154F83;
+$fb-secondary: #154f83;
 $card-color: #ff4719;
 $yell: #fad10c;

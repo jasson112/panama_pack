@@ -2,11 +2,13 @@
 <section class="prices__header">
   <div class="container">
     <div class="prices__header__content">
-      <h3 class="prices__header-title">{{ data.prices_header.title}}</h3>
-      <p class="prices__header-description">{{ data.prices_header.description}}</p>
+      <h3 class="prices__header-title">{{ data.prices_header.title }}</h3>
+      <p class="prices__header-description">
+        {{ data.prices_header.description }}
+      </p>
     </div>
     <figure>
-    <img src="{{data.prices_header.image}}" alt="Precios header">
+      <img src="{{ data.prices_header.image }}" alt="Precios header" />
     </figure>
   </div>
 </section>
@@ -20,11 +22,14 @@
         <p class="plans__tabs-description">{{ item.description }}</p>
         <p class="plans__tabs-price"><span>por:</span>${{ item.price }}</p>
         <ul class="plans__tabs-specs">
-        {# {{item.caracteristicas}} #}
-          {% for spec in item.caracteristicas %}
+          {#
+          {{
+            item.caracteristicas
+          }}
+          #} {% for spec in item.caracteristicas %}
           <li class="plans__tabs-spec">
             <figure>
-              <img src="{{ spec.image }}" alt="Plan spec">
+              <img src="{{ spec.image }}" alt="Plan spec" />
             </figure>
             <p>{{ spec.text }}</p>
           </li>
@@ -40,49 +45,71 @@
 <section class="upgrade__plan">
   <div class="container">
     <div class="upgrade__plan__content">
-      <h3 class="upgrade__plan__content-title">{{ data. mejorar_planes.title}}</h3>
-      <p class="upgrade__plan__content-description"> {{ data.mejorar_planes.description }}</p>
+      <h3 class="upgrade__plan__content-title">
+        {{ data.mejorar_planes.title }}
+      </h3>
+      <p class="upgrade__plan__content-description">
+        {{ data.mejorar_planes.description }}
+      </p>
       <div class="upgrade__plan__benefits">
         <figure>
-          <img src="/static/dist/images/upgrade_plan.png" alt="Beneficios upgrade plan">
+          <img
+            src="static/dist/images/upgrade_plan.png"
+            alt="Beneficios upgrade plan"
+          />
         </figure>
-        <p class="upgrade__plan__benefits-price">por <span>${{data.mejorar_planes.add_price}}</span> adicionales</p> 
-        <a href="javascript: void(0)" class="button upgrade__plan-cta">{{ data.mejorar_planes.button }}</a>
+        <p class="upgrade__plan__benefits-price">
+          por <span>${{ data.mejorar_planes.add_price }}</span> adicionales
+        </p>
+        <a href="javascript: void(0)" class="button upgrade__plan-cta">{{
+          data.mejorar_planes.button
+        }}</a>
       </div>
     </div>
 
     <div class="upgrade__plan__steps">
       <div class="upgrade__plan__steps-close"></div>
       <div class="upgrade__plan__steps-one">
-        <p class="upgrade__plan-description"> <span class="upgrade__plan-number">1</span> {{ data.steps.stepOne }}</p>
+        <p class="upgrade__plan-description">
+          <span class="upgrade__plan-number">1</span> {{ data.steps.stepOne }}
+        </p>
         <ul class="upgrade__plan__one-list">
           {% for item in data.steps.planes %}
-            <li data-index="{{item.index}}" class="upgrade__plan__one-list_item">{{ item.name }}</li>
+          <li
+            data-index="{{ item.index }}"
+            class="upgrade__plan__one-list_item"
+          >
+            {{ item.name }}
+          </li>
           {% endfor %}
         </ul>
       </div>
 
       <div class="upgrade__plan__steps-two">
-        <p class="upgrade__plan-description"> <span class="upgrade__plan-number">2</span> {{ data.steps.stepTwo }}</p>
+        <p class="upgrade__plan-description">
+          <span class="upgrade__plan-number">2</span> {{ data.steps.stepTwo }}
+        </p>
         {% for item in data.steps.planes %}
-          <div data-index="{{item.index}}" class="upgrade__plan__two-plan">
-            <h2 class="upgrade__plan__two-name">{{item.name}} <span class="upgrade__plan__two-plus">+</span></h2>
-            <p>por:</p>
-            <p class="upgrade__plan__two-price">$ {{item.price}}</p>
-            <ul class="upgrade__plan__two-specs">
-              {% for spec in item.caracteristicas %}
-                <li class="upgrade__plan__two-spec">
-                  <figure>
-                    <img src="{{spec.image}}" alt="Plan spec">
-                  </figure>
-                  <p>{{spec.text}}</p>
-                </li>
-              {% endfor %}
-            </ul>
-            <div class="upgrade__plan__two-cta">
-              <a href="#" class="button">CONTACTAR ASESOR</a>
-            </div>
+        <div data-index="{{ item.index }}" class="upgrade__plan__two-plan">
+          <h2 class="upgrade__plan__two-name">
+            {{ item.name }} <span class="upgrade__plan__two-plus">+</span>
+          </h2>
+          <p>por:</p>
+          <p class="upgrade__plan__two-price">$ {{ item.price }}</p>
+          <ul class="upgrade__plan__two-specs">
+            {% for spec in item.caracteristicas %}
+            <li class="upgrade__plan__two-spec">
+              <figure>
+                <img src="{{ spec.image }}" alt="Plan spec" />
+              </figure>
+              <p>{{ spec.text }}</p>
+            </li>
+            {% endfor %}
+          </ul>
+          <div class="upgrade__plan__two-cta">
+            <a href="#" class="button">CONTACTAR ASESOR</a>
           </div>
+        </div>
         {% endfor %}
       </div>
     </div>
@@ -92,10 +119,128 @@
 <section class="compare__plan">
   <div class="container">
     <div class="compare__plan-content">
-      <h3>{{data.compare_planes.title}}</h3>
-      <a href="#" class="button">{{data.compare_planes.button}}</a>
+      <h3>{{ data.compare_planes.title }}</h3>
+      <a href="#" class="button">{{ data.compare_planes.button }}</a>
     </div>
   </div>
+</section>
+
+<section class="container" id="myTable">
+  <article class="tip">
+    {% for item in data.table.quote %}
+    <div class="content">
+      <img src="{{ item.image }}" />
+      <p class="name">{{ item.name }}</p>
+    </div>
+    {% endfor %}
+  </article>
+  <table class="table">
+    <thead>
+      <tr>
+        <th></th>
+        {% for plan in data.table.planes %}
+        <th>
+          {{ plan.name }}<br />
+          <span class="price"> {{ plan.price }} </span>
+        </th>
+        {% endfor %}
+      </tr>
+    </thead>
+    <tbody>
+      {% for feature in data.table.features %}
+      <tr>
+        <td class="category">
+          {{ feature.title }}
+          <p class="subtitle">
+            {{ feature.description }}
+          </p>
+        </td>
+        {% set myIndex = loop.index - 1 %} {% for plan in data.table.planes %}
+        {% if myIndex > 1 %}
+        <td
+          class="{% if data.table.planes[loop.index - 1][myIndex] %}orange{% else %}price{% endif %}"
+        ></td>
+        {% else %}
+        <td>
+          {{ data.table.planes[loop.index - 1][myIndex] }}
+        </td>
+        {% endif %} {% endfor %}
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
+<section class="container hidden">
+  <h2 class="title">{{ data.planes.main_title }}</h2>
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      {% for plancito in data.planes.lista %}
+      <div class="swiper-slide slide-container">
+        <img src="{{ plancito.image }}" />
+        <div>
+          <article class="info">
+            {% include "table/arrow-left.svg" %} {% include
+            "table/arrow-rigth.svg" %}
+            <h3 class="info__title">{{ plancito.name }}</h3>
+            <p class="info__desc">
+              {{ plancito.description }}
+            </p>
+            <button class="button discover">{{ data.descrubre_mas }}</button>
+          </article>
+        </div>
+        <div class="showtime">
+          <div class="showtime__info">
+            <h3 class="info__title">{{ plancito.name }}</h3>
+            <p class="info__desc">
+              {{ plancito.showtime.description }}
+            </p>
+          </div>
+          <div class="showtime__features">
+            <ul>
+              {% for feature in plancito.showtime.features %}
+              <li>
+                <img src="static/dist/images/check-white.png" />
+                <p>
+                  {{ feature }}
+                </p>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="showtime__back">
+            <img src="static/dist/images/back.png" />
+          </div>
+          <div class="showtime__question">
+            <img src="static/dist/images/question.png" />
+            <div class="showtime__bubble">
+              <img id="close" src="static/dist/images/x.png" />
+              <img class="arrow" src="static/dist/images/bubble-arrow.png" />
+              <h3 class="showtime__bubble-title">{{ data.ayuda.title }}</h3>
+              <p class="showtime__bubble-desc">
+                {{ data.ayuda.description }}
+              </p>
+              <a class="button" href="{{ plancito.link }}">{{
+                data.contactar_asesor
+              }}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+</section>
+<section class="full">
+  <article class="medida">
+    <h2 class="medida__title">{{ data.byob.title }}</h2>
+    <p class="medida__desc">
+      {{ data.byob.description }}
+    </p>
+    <a class="button" href="{{ data.byob.link }}">{{ data.byob.button }}</a>
+  </article>
 </section>
 
 <section class="business_value">
@@ -104,29 +249,41 @@
     <ul class="business_value__list">
       <li class="business_value__item">
         <figure>
-          <img src="/static/dist/images/asesoria_confiable.png" alt="valor para tu negocio">
+          <img
+            src="static/dist/images/asesoria_confiable.png"
+            alt="valor para tu negocio"
+          />
         </figure>
         <p class="business_value__item-title">Asesoría Confiable</p>
         <p class="business_value__item-text">
-          Tu negocio está en buenas manos con asesores dedicados que te acompañarán en cada etapa.
+          Tu negocio está en buenas manos con asesores dedicados que te
+          acompañarán en cada etapa.
         </p>
       </li>
       <li class="business_value__item">
         <figure>
-          <img src="/static/dist/images/asesoria_confiable.png" alt="valor para tu negocio">
+          <img
+            src="static/dist/images/asesoria_confiable.png"
+            alt="valor para tu negocio"
+          />
         </figure>
         <p class="business_value__item-title">Asesoría Confiable</p>
         <p class="business_value__item-text">
-          Tu negocio está en buenas manos con asesores dedicados que te acompañarán en cada etapa.
+          Tu negocio está en buenas manos con asesores dedicados que te
+          acompañarán en cada etapa.
         </p>
       </li>
       <li class="business_value__item">
         <figure>
-          <img src="/static/dist/images/asesoria_confiable.png" alt="valor para tu negocio">
+          <img
+            src="static/dist/images/asesoria_confiable.png"
+            alt="valor para tu negocio"
+          />
         </figure>
         <p class="business_value__item-title">Asesoría Confiable</p>
         <p class="business_value__item-text">
-          Tu negocio está en buenas manos con asesores dedicados que te acompañarán en cada etapa.
+          Tu negocio está en buenas manos con asesores dedicados que te
+          acompañarán en cada etapa.
         </p>
       </li>
     </ul>
@@ -135,22 +292,28 @@
 
 <section class="success_stories">
   <div class="container">
-    <h2 class="success_stories-title">CONOCE LOS CASOS DE EXITO DE NUESTROS CLIENTES</h2>
+    <h2 class="success_stories-title">
+      CONOCE LOS CASOS DE EXITO DE NUESTROS CLIENTES
+    </h2>
     <figure>
-      <img src="/static/dist/images/felipe_milanes.png" alt="casos de exitos">
+      <img src="static/dist/images/felipe_milanes.png" alt="casos de exitos" />
     </figure>
     <div class="success_stories-content">
       <figure class="quote">
-        <img src="/static/dist/images/quote_icon.png" alt="quote">
+        <img src="static/dist/images/quote_icon.png" alt="quote" />
       </figure>
       <div class="success_stories-text">
         <figure>
-          <img src="/static/dist/images/user_icon.png" alt="quote">
+          <img src="static/dist/images/user_icon.png" alt="quote" />
         </figure>
         <p class="success_stories-name">Félipe Milanes</p>
         <p class="success_stories-job">Dueña de restaurante</p>
         <p class="success_stories-description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elit odio, luctus id iaculis vitae, sagittis ac est. Cras eu posuere purus. Maecenas odio massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elit odio, luctus id iaculis vitae, sagittis ac est. Cras eu posuere purus. Maecenas odio massa.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          elit odio, luctus id iaculis vitae, sagittis ac est. Cras eu posuere
+          purus. Maecenas odio massa. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Suspendisse elit odio, luctus id iaculis vitae,
+          sagittis ac est. Cras eu posuere purus. Maecenas odio massa.
         </p>
       </div>
     </div>
@@ -160,18 +323,24 @@
 <footer>
   <div class="footer__content">
     <figure>
-      <img src="/static/dist/images/logo.svg" alt="logo">
+      <img src="static/dist/images/logo.svg" alt="logo" />
     </figure>
     <div class="footer__content-info">
       <p class="footer__content_title">Oficinas corporativas</p>
-      <p class="footer__content-text">Vía España, <br>Plaza internacional, <br>Edificio Torre Banco<br> Nacional de Panamá</p>
+      <p class="footer__content-text">
+        Vía España, <br />Plaza internacional, <br />Edificio Torre Banco<br />
+        Nacional de Panamá
+      </p>
       <a href="tel:+5073606373">Tlf. +(507) 360-6373</a>
     </div>
   </div>
   <div class="footer__legal">
-    <p class="footer__legal-all_rights">©2020. +Móvil Negocios. All rights reserved</p>
-    <p class="footer__legal-privacy">Póliticas de privacidad Condiciones de uso</p>
+    <p class="footer__legal-all_rights">
+      ©2020. +Móvil Negocios. All rights reserved
+    </p>
+    <p class="footer__legal-privacy">
+      Póliticas de privacidad Condiciones de uso
+    </p>
   </div>
-
 </footer>
 {% endblock %}
