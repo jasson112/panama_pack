@@ -1,6 +1,6 @@
 from flask import render_template
 from flask import current_app as app
-
+import yaml
 
 @app.route('/', methods=['GET'])
 def home():
@@ -11,4 +11,7 @@ def home():
 @app.route('/table', methods=['GET'])
 def playbook():
     """Homepage."""
-    return render_template('table/index.jinja2')
+    with open(r'app/data.yaml') as file:
+        data = yaml.load(file, Loader=yaml.FullLoader)
+
+    return render_template('table/index.jinja2', data=data)

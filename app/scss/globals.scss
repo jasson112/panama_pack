@@ -231,8 +231,8 @@ textarea {
   color: $fb-primary;
   letter-spacing: 0.05px;
   text-align: center;
-  line-height: 60px;
-  max-width: 825px;
+  line-height: 40px;
+  max-width: 318px;
   margin: 30px auto;
 }
 
@@ -271,7 +271,9 @@ textarea {
     }
   }
 }
-
+a.button {
+  padding: 14px;
+}
 .button {
   background-color: $fb-primary;
   width: 193px;
@@ -498,13 +500,17 @@ textarea {
   .title {
     font-size: 55px;
     letter-spacing: 0.07px;
-    max-width: 318px;
-    line-height: 40px;
+    max-width: 825px;
+
+    line-height: 60px;
   }
   .swiper-container {
     height: 548px;
     .swiper-slide {
       align-items: center;
+      > img {
+        width: auto;
+      }
     }
   }
   .slide-container {
