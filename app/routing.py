@@ -5,7 +5,10 @@ import yaml
 @app.route('/', methods=['GET'])
 def home():
     """Homepage."""
-    return render_template('home/index.jinja2')
+    with open(r'app/data.yaml') as file:
+        data = yaml.load(file, Loader=yaml.FullLoader)
+
+    return render_template('home/index.jinja2', data=data)
 
 
 @app.route('/table', methods=['GET'])

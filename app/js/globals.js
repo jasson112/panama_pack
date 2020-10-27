@@ -25,7 +25,8 @@ let upgradePlan = document.getElementsByClassName('upgrade__plan-cta')[0];
 let steps = document.getElementsByClassName('upgrade__plan__steps')[0];
 let planToUpgrade = document.querySelectorAll('.upgrade__plan__one-list_item');
 let stepTwo = document.getElementsByClassName('upgrade__plan__steps-two')[0]
-let closeSteps = document.getElementsByClassName('upgrade__plan__steps-close')[0]
+let closeSteps = document.getElementsByClassName('upgrade__plan__steps-close')[0];
+let stepPlane = document.getElementsByClassName('upgrade__plan__two-plan');
 
 upgradePlan.addEventListener("click", openUpgradeSteps);
 [...planToUpgrade].forEach((plan) => {
@@ -45,6 +46,7 @@ function openPlanUpgraded(element){
   });
   steps.classList.add("active");
   element.classList.add('active');
+  console.log(element.dataset.index);
   stepTwo.classList.add('active');
 }
 
