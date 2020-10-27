@@ -21,7 +21,7 @@ table:
       }
     - {
         title: "TV",
-        description: "Televisión inalámbrica con acceso a programación local e internacional para darle a tu negocio un ambiente diferente.",
+        description: "Televisión inalámbrica con acceso a programación local e internacional para darle a tu negocio un ambiente diferente. ",
       }
     - {
         title: "Móvil",
@@ -65,52 +65,52 @@ planes:
         image: "/static/dist/images/escencial.png",
         name: "ESENCIAL",
         link: "http://google.com",
-        description: "Con este plan podrás cubrir las necesidades básicas de tu negocio en cuanto a internet y telefonía fija. Es ideal para empresas con un volumen bajo de llamadas.",
+        description: "Con este plan podrás cubrir las necesidades básicas de tu negocio en cuanto a internet y telefonía fija. Es ideal para empresas con un volumen bajo de llamadas. ",
         showtime:
           {
-            description: "Nuestro plan más completo ya que se adapta a cualquier tipo de negocio e integra servicios de TV con internet y telefonia fija para una conectividad superior en todo momento.",
+            description: "Con este plan podrás cubrir las necesidades básicas de tu negocio en cuanto a internet y telefonía fija. Es ideal para empresas con un volumen bajo de llamadas.",
             features:
               {
-                "1Disfruta de canales variados en tu local que se adaptan a los gustos de tus clientes",
-                "Disfruta de canales variados en tu local que se adaptan a los gustos de tus clientes",
+                "Mantén tus archivos asegurados en la nube con 2TB de almacenamiento.",
+                "Añade servicios adicionales como MyUC Softphone y TV según los necesites para impulsar tu negocio.",
               },
           },
       }
     - {
         image: "/static/dist/images/escencial.png",
-        name: "ESENCIAL",
+        name: "AVANZADO",
         link: "http://google.com",
-        description: "Con este plan podrás cubrir las necesidades básicas de tu negocio en cuanto a internet y telefonía fija. Es ideal para empresas con un volumen bajo de llamadas.",
+        description: "Perfecto para empresas que necesitan una mayor conectividad con sus clientes y proveedores. La idea es que no pierdas ninguna llamada y puedas ofrecer una mejor atención al cliente.",
         showtime:
           {
-            description: "Nuestro plan más completo ya que se adapta a cualquier tipo de negocio e integra servicios de TV con internet y telefonia fija para una conectividad superior en todo momento.",
+            description: "Perfecto para empresas que necesitan una mayor conectividad con sus clientes y proveedores. La idea es que no pierdas ninguna llamada y puedas ofrecer una mejor atención al cliente.",
             features:
               {
-                "1Disfruta de canales variados en tu local que se adaptan a los gustos de tus clientes",
-                "Disfruta de canales variados en tu local que se adaptan a los gustos de tus clientes",
+                "Utiliza MyUC Softphone para recibir las llamadas de tu número fijo en tu celular para que estés conectado en todo momento tanto con clientes como con tu equipo de trabajo.",
+                "Con los minutos ilimitados para llamadas locales y nacionales podrás atender un mayor volumen de llamadas.",
               },
           },
       }
     - {
         image: "/static/dist/images/escencial.png",
-        name: "ESENCIAL",
+        name: "PREMIUM",
         link: "http://google.com",
-        description: "Con este plan podrás cubrir las necesidades básicas de tu negocio en cuanto a internet y telefonía fija. Es ideal para empresas con un volumen bajo de llamadas.",
+        description: "Nuestro plan más completo ya que se adapta a cualquier tipo de negocio e integra servicios de TV con internet y telefonia fija para una conectividad superior en todo momento.",
         showtime:
           {
             description: "Nuestro plan más completo ya que se adapta a cualquier tipo de negocio e integra servicios de TV con internet y telefonia fija para una conectividad superior en todo momento.",
             features:
               {
-                "1Disfruta de canales variados en tu local que se adaptan a los gustos de tus clientes",
-                "Disfruta de canales variados en tu local que se adaptan a los gustos de tus clientes",
+                "Disfruta de canales variados en tu local que se adaptan a los gustos de tus clientes.",
+                "Complementa tu plan añadiendo servicios móviles y productos como Microsoft 365.",
               },
           },
       }
 descrubre_mas: "DESCUBRE MÁS"
 ayuda:
   title: "¿Necesitas ayuda?"
-  description: "Puedes contactarte con un asesor si necesitas ayuda personalizada para selecionar un plan"
-contactar_asesor: "CONTACTAR ASESOR"
+  description: "Si todavía tienes dudas acerca del plan que mejor se ajuste a tus necesidades nuestros asesores te contactarán para brindarte ayuda personalizada."
+contactar_asesor: "SOLICITAR MÁS INFORMACIÓN"
 byob:
   title: "CREA UN PLAN A TU MEDIDA"
   description: "Selecciona los productos y servicios que mejor se adapten a tu modelo de negocio."
