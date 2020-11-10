@@ -1,353 +1,270 @@
 {% extends "layout.jinja2" %} {% block content %}
-<section class="header">
-  <figure>
-    <img class="header_desktop" src="static/dist/images/header.png" alt="header">
-    <img class="header_mobile" src="static/dist/images/header_mobile.png" alt="header">
-  </figure>
-</section>
-
-<section class="prices__header">
-  <div class="container">
-    <div class="prices__header__content">
-      <h3 class="prices__header-title">{{ data.prices_header.title }}</h3>
-      <p class="prices__header-description">
-        {{ data.prices_header.description }}
-      </p>
+<div class="webContainer">
+  <div class="sidebar"></div>
+  <main class="main">
+    <div class="logo">
+      <svg
+        style="width: 0; height: 0; position: absolute"
+        aria-hidden="true"
+        focusable="false"
+      >
+        <linearGradient id="my-cool-gradient" x2="1" y2="1">
+          <stop offset="0%" stop-color="#1DD3B0" />
+          <stop offset="100%" stop-color="#AFFC41" />
+        </linearGradient>
+      </svg>
+      <svg
+        id="dinamic"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        viewBox="0 0 467.46 73.34"
+        style="enable-background: new 0 0 467.46 73.34"
+        xml:space="preserve"
+      >
+        <g>
+          <g>
+            <g class="word">
+              <path
+                class="st0"
+                d="M455.47,53.79c-1.5,2.11-3.37,3.93-5.56,5.41c-3.36,2.26-7.7,3.55-12.56,3.74
+                                    c-5.15,0.2-9.45-0.47-12.81-1.99c-2.79-1.26-5.33-3.22-7.53-5.81c-3.44-4.04-5.5-8.92-6.15-14.54l-0.1-1.16
+                                    c-0.09-1.02-0.13-2.04-0.13-3.03c0-7.35,2.14-13.6,6.37-18.57c2.21-2.59,4.74-4.55,7.53-5.81c3.36-1.52,7.66-2.19,12.81-1.99
+                                    c4.85,0.19,9.2,1.48,12.56,3.74c2.19,1.47,4.06,3.29,5.56,5.41l0.37,0.52h11.62l-0.93-1.81c-2.41-4.68-5.76-8.57-9.97-11.56
+                                    c-9.44-6.71-24.36-8.28-35.47-3.74c-4.02,1.65-7.62,4.07-10.69,7.22c-6.77,6.92-10.2,15.86-10.2,26.6c0,0.61,0.01,1.24,0.04,1.9
+                                    h-0.02l0.08,1.32c0.59,9.38,3.99,17.31,10.1,23.55c3.07,3.14,6.67,5.57,10.69,7.22c4.26,1.74,9.07,2.59,13.93,2.59
+                                    c7.81,0,15.72-2.18,21.54-6.32c4.21-2.99,7.56-6.88,9.97-11.56l0.93-1.81h-11.62L455.47,53.79z"
+              />
+            </g>
+            <g class="word">
+              <path
+                class="st0"
+                d="M43.32,3.25c-4.01-1.64-8.23-2.47-12.54-2.47H0v72.57h30.78c4.31,0,8.53-0.83,12.54-2.47
+                                    c4.02-1.65,7.62-4.07,10.69-7.22c6.77-6.91,10.2-15.86,10.2-26.6c0-10.73-3.43-19.68-10.2-26.59
+                                    C50.94,7.32,47.34,4.89,43.32,3.25z M10.42,10.77h20.04c7.02,0,12.56,2.52,16.95,7.72c4.23,4.97,6.37,11.22,6.37,18.57
+                                    c0,7.35-2.14,13.6-6.38,18.57c-4.38,5.19-9.92,7.71-16.94,7.71H10.42V10.77z"
+              />
+            </g>
+            <g class="word">
+              <rect x="83" y="0.77" class="st0" width="10.42" height="72.57" />
+            </g>
+            <g class="word">
+              <polygon
+                class="st0"
+                points="169.07,57.2 127.64,0.77 116.56,0.77 116.56,73.34 126.99,73.34 126.99,16.72 168.42,73.34 
+                                    179.5,73.34 179.5,0.77 169.07,0.77 			"
+              />
+            </g>
+            <g class="word">
+              <path
+                class="st0"
+                d="M222.06,0.77l-30.8,72.57h11.49l8.58-20.33h33.08l8.58,20.33h11.49l-30.8-72.57H222.06z M240.29,43.23
+                                    h-24.85l12.43-29.73L240.29,43.23z"
+              />
+            </g>
+            <g class="word">
+              <polygon
+                class="st0"
+                points="311.76,33.19 287.29,0.77 276.22,0.77 276.22,73.34 286.65,73.34 286.65,17.66 311.77,49.45 
+                                    336.46,17.71 336.46,73.34 346.89,73.34 346.89,0.77 335.81,0.77 			"
+              />
+            </g>
+            <g class="word">
+              <rect
+                x="370.02"
+                y="0.77"
+                class="st0"
+                width="10.42"
+                height="72.57"
+              />
+            </g>
+          </g>
+        </g>
+      </svg>
     </div>
-    <figure>
-      <img src="{{ data.prices_header.image }}" alt="Precios header" />
-    </figure>
-  </div>
-</section>
-
-<section class="plans__tabs">
-  <div class="container">
-    <ul>
-      {% for item in data.planes_basicos %}
-      <li class="plans__tabs-element">
-        <div class="plans__tabs-name">{{ item.name }}</div>
-        <p class="plans__tabs-description">{{ item.description }}</p>
-        <p class="plans__tabs-price"><span>por:</span>${{ item.price }}</p>
-        <ul class="plans__tabs-specs">
-          {#
-          {{
-            item.caracteristicas
-          }}
-          #} {% for spec in item.caracteristicas %}
-          <li class="plans__tabs-spec">
-            <figure>
-              <img src="{{ spec.image }}" alt="Plan spec" />
-            </figure>
-            <p>{{ spec.text }}</p>
-          </li>
-          {% endfor %}
-        </ul>
-        <a href="{{ item.link }}" class="button">COTIZAR PLAN</a>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
-</section>
-
-<section class="upgrade__plan">
-  <div class="container">
-    <div class="upgrade__plan__content">
-      <h3 class="upgrade__plan__content-title">
-        {{ data.mejorar_planes.title }}
-      </h3>
-      <p class="upgrade__plan__content-description">
-        {{ data.mejorar_planes.description }}
-      </p>
-      <div class="upgrade__plan__benefits">
-        <figure>
-          <img
-            src="static/dist/images/upgrade_plan.png"
-            alt="Beneficios upgrade plan"
-          />
-        </figure>
-        <p class="upgrade__plan__benefits-price">
-          por <span>${{ data.mejorar_planes.add_price }}</span> adicionales
-        </p>
-        <a href="javascript: void(0)" class="button upgrade__plan-cta">{{
-          data.mejorar_planes.button
-        }}</a>
+    <div class="swiper">
+      <div class="swiper__content">
+        <h1 class="swiper__content-title">
+          sOLUCIONES <br />
+          DIGITALES
+        </h1>
+        <img class="swiper__content-img" src="/static/dist/images/home.png" />
       </div>
     </div>
-
-    <div class="upgrade__plan__steps">
-      <div class="upgrade__plan__steps-close"></div>
-      <div class="upgrade__plan__steps-one">
-        <p class="upgrade__plan-description">
-          <span class="upgrade__plan-number">1</span> {{ data.steps.stepOne }}
-        </p>
-        <ul class="upgrade__plan__one-list">
-          {% for item in data.steps.planes %}
-          <li
-            data-index="{{ item.index }}"
-            class="upgrade__plan__one-list_item"
-          >
-            {{ item.name }}
-          </li>
-          {% endfor %}
-        </ul>
+    <div class="banner">
+      <div class="banner__info">
+        <div class="banner__wrapper">
+          <h2 class="title">¿Por qué nos conocen?</h2>
+          <div class="banner__txt">
+            En Dinamic, nos hemos vuelto unos duros en desarrollar soluciones
+            digitales para mejorar el ecosistema digital de tu empresa y hacer
+            que los procesos internos sean más fáciles. Facilitamos y
+            personalizamos tus procesos web para que tú puedas enfocarte en lo
+            importante: traer más gente y vender más.
+          </div>
+        </div>
       </div>
-
-      <div class="upgrade__plan__steps-two">
-        <p class="upgrade__plan-description">
-          <span class="upgrade__plan-number">2</span> {{ data.steps.stepTwo }}
-        </p>
-        {% for item in data.steps.planes %}
-        <div data-index="{{ item.index }}" class="upgrade__plan__two-plan">
-          <h2 class="upgrade__plan__two-name">
-            {{ item.name }} <span class="upgrade__plan__two-plus">+</span>
-          </h2>
-          <p>por:</p>
-          <p class="upgrade__plan__two-price">$ {{ item.price }}</p>
-          <ul class="upgrade__plan__two-specs">
-            {% for spec in item.caracteristicas %}
-            <li class="upgrade__plan__two-spec">
-              <figure>
-                <img src="{{ spec.image }}" alt="Plan spec" />
-              </figure>
-              <p>{{ spec.text }}</p>
+    </div>
+    <div class="banner">
+      <div class="banner__info">
+        <div class="banner__wrapper">
+          <h2 class="title">Lo que es importante para nosotros</h2>
+          <div class="banner__txt">
+            * La responsabilidad y el compromiso con nuestro trabajo es
+            fundamental para ser calidosos. * La pasión por lo que hacemos es
+            nuestro motor para materializar tus ideas y entregarte servicios de
+            calidad.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="banner__info">
+        <div class="banner__wrapper">
+          <h2 class="title">Si esto te suena familiar, estás donde es</h2>
+          <div class="banner__txt">
+            * Sitios web y apps: desarrollo y diseño de webs personalizadas para
+            tu negocio y las necesidades de tus usuarios. No usamos Content
+            Management Systems (CMS), tendrás una página web hecha a la medida,
+            con diseño único, segura y rápida. Nuestro equipo de diseño UI/UX se
+            encargará de que tu solución sea dinámica y fácil de usar. *
+            Consultoría: nuestro equipo especializado en diferentes áreas
+            digitales te acompañará en todo el proceso de transformación
+            digital.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="banner__info">
+        <div class="banner__wrapper">
+          <h2 class="title">Nuestra razón para trabajar</h2>
+          <div class="banner__txt">
+            Queremos que te des cuenta que no es difícil entrar al mundo digital
+            y visibilizar tu empresa a nuevos usuarios. Lo que te ofrecemos está
+            hecho a tu medida y adaptado a tu bolsillo. No solo te garantizamos
+            bueno, bonito y barato, sino que nos volveremos tus parceros, para
+            poder conocerte, entenderte y que recibas tal cual lo que
+            imaginaste.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="banner__info">
+        <div class="banner__wrapper">
+          <h2 class="title">¿De dónde salimos?</h2>
+          <div class="banner__txt">
+            Somos un grupo de jóvenes capacitados, experimentados y apasionados
+            por materializar tus ideas. Tenemos 8 años de experiencia en
+            desarrollo, diseño y programación web y le metemos la ficha a
+            estudiar y capacitarnos para brindarte soluciones buenas, bonitas y
+            baratas. Estamos pilas a las últimas actualizaciones tecnológicas
+            para que tus servicios estén siempre a la par con el mercado.
+          </div>
+        </div>
+        <div class="banner__wrapper">
+          <h2 class="title">Los chicharrones que solucionamos:</h2>
+          <ul class="features">
+            {% for servicio in data.servicios %}
+            <li class="features__item">
+              <img
+                src="/static/dist/images/time.png"
+                class="features__item-img"
+              />
+              <p class="features__item-title">{{ servicio }}</p>
             </li>
             {% endfor %}
           </ul>
-          <div class="upgrade__plan__two-cta">
-            <a href="{{ item.link }}" class="button">CONTACTAR ASESOR</a>
-          </div>
         </div>
-        {% endfor %}
       </div>
+      <hr class="separator" />
     </div>
-  </div>
-</section>
-
-<section class="compare__plan">
-  <div class="container">
-    <div class="compare__plan-content">
-      <h3>{{ data.compare_planes.title }}</h3>
-      <a href="#" class="button">{{ data.compare_planes.button }}</a>
-    </div>
-  </div>
-</section>
-
-<section class="container" id="myTable">
-  <article class="tip">
-    {% for item in data.table.quote %}
-    <div class="content">
-      <img src="{{ item.image }}" />
-      <p class="name">{{ item.name }}</p>
-    </div>
-    {% endfor %}
-  </article>
-  <table class="table">
-    <thead>
-      <tr>
-        <th></th>
-        {% for plan in data.table.planes %}
-        <th>
-          {{ plan.name }}<br />
-          <span class="price"> {{ plan.price }} </span>
-        </th>
-        {% endfor %}
-      </tr>
-    </thead>
-    <tbody>
-      {% for feature in data.table.features %}
-      <tr>
-        <td class="category">
-          {{ feature.title }}
-          <p class="subtitle">
-            {{ feature.description }}
-          </p>
-        </td>
-        {% set myIndex = loop.index - 1 %} {% for plan in data.table.planes %}
-        {% if myIndex > 1 %}
-        <td
-          class="{% if data.table.planes[loop.index - 1][myIndex] %}orange{% else %}price{% endif %}"
-        ></td>
-        {% else %}
-        <td>
-          {{ data.table.planes[loop.index - 1][myIndex] }}
-        </td>
-        {% endif %} {% endfor %}
-      </tr>
-      {% endfor %}
-    </tbody>
-  </table>
-</section>
-<section class="container hidden">
-  <h2 class="title">{{ data.planes.main_title }}</h2>
-  <!-- Swiper -->
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      {% for plancito in data.planes.lista %}
-      <div class="swiper-slide slide-container">
-        <img src="{{ plancito.image }}" />
-        <div>
-          <article class="info">
-            {% include "table/arrow-left.svg" %} {% include
-            "table/arrow-rigth.svg" %}
-            <h3 class="info__title">{{ plancito.name }}</h3>
-            <p class="info__desc">
-              {{ plancito.description }}
-            </p>
-            <button class="button discover">{{ data.descrubre_mas }}</button>
-          </article>
-        </div>
-        <div class="showtime">
-          <div class="showtime__info">
-            <h3 class="info__title">{{ plancito.name }}</h3>
-            <p class="info__desc">
-              {{ plancito.showtime.description }}
-            </p>
-          </div>
-          <div class="showtime__features">
-            <ul>
-              {% for feature in plancito.showtime.features %}
-              <li>
-                <img src="static/dist/images/check-white.png" />
-                <p>
-                  {{ feature }}
-                </p>
-              </li>
-              {% endfor %}
-            </ul>
-          </div>
-          <div class="showtime__back">
-            <img src="static/dist/images/back.png" />
-          </div>
-          <div class="showtime__question">
-            <img src="static/dist/images/question.png" />
-            <div class="showtime__bubble">
-              <img id="close" src="static/dist/images/x.png" />
-              <img class="arrow" src="static/dist/images/bubble-arrow.png" />
-              <h3 class="showtime__bubble-title">{{ data.ayuda.title }}</h3>
-              <p class="showtime__bubble-desc">
-                {{ data.ayuda.description }}
-              </p>
-              <a class="button" href="{{ plancito.link }}">{{
-                data.contactar_asesor
-              }}</a>
+    <div class="projects">
+      <h2 class="title">Proyectos</h2>
+      <div class="projects__container">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            {% for project in data.projects %} {% set index = loop.index %} {%
+            for key, value in project.items() %}
+            <div class="swiper-slide">
+              <div class="swiper-slide__content">
+                <a href="{{ value }}">
+                  <div
+                    class="projects__item"
+                    style="background-image: url('/static/dist/images/project{{
+                      index
+                    }}.png')"
+                  >
+                    <h3 class="projects__name">{{ key }}</h3>
+                  </div>
+                </a>
+              </div>
             </div>
+            {% endfor %} {% endfor %}
           </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
-      {% endfor %}
+      <hr class="separator" />
     </div>
-  </div>
-  <!-- Add Pagination -->
-  <div class="swiper-pagination"></div>
-</section>
-<section class="full">
-  <article class="medida">
-    <h2 class="medida__title">{{ data.byob.title }}</h2>
-    <p class="medida__desc">
-      {{ data.byob.description }}
-    </p>
-    <a class="button" href="{{ data.byob.link }}">{{ data.byob.button }}</a>
-  </article>
-</section>
-
-<section class="business_value">
-  <div class="container">
-    <h2 class="business_value-title">MÁS VALOR PARA TU NEGOCIO</h2>
-    <ul class="business_value__list">
-      <li class="business_value__item">
-        <figure>
-          <img
-            src="static/dist/images/asesoria_confiable.png"
-            alt="valor para tu negocio"
-          />
-        </figure>
-        <p class="business_value__item-title">Asesoría Confiable</p>
-        <p class="business_value__item-text">
-          Tu negocio está en buenas manos con asesores dedicados que te
-          acompañarán en cada etapa.
-        </p>
-      </li>
-      <li class="business_value__item">
-        <figure>
-          <img
-            src="static/dist/images/asesoria_confiable.png"
-            alt="valor para tu negocio"
-          />
-        </figure>
-        <p class="business_value__item-title">Asesoría Confiable</p>
-        <p class="business_value__item-text">
-          Tu negocio está en buenas manos con asesores dedicados que te
-          acompañarán en cada etapa.
-        </p>
-      </li>
-      <li class="business_value__item">
-        <figure>
-          <img
-            src="static/dist/images/asesoria_confiable.png"
-            alt="valor para tu negocio"
-          />
-        </figure>
-        <p class="business_value__item-title">Asesoría Confiable</p>
-        <p class="business_value__item-text">
-          Tu negocio está en buenas manos con asesores dedicados que te
-          acompañarán en cada etapa.
-        </p>
-      </li>
-    </ul>
-  </div>
-</section>
-
-<section class="success_stories">
-  <div class="container">
-    <h2 class="success_stories-title">
-      CONOCE LOS CASOS DE EXITO DE NUESTROS CLIENTES
-    </h2>
-    <figure>
-      <img src="static/dist/images/felipe_milanes.png" alt="casos de exitos" />
-    </figure>
-    <div class="success_stories-content">
-      <figure class="quote">
-        <img src="static/dist/images/quote_icon.png" alt="quote" />
-      </figure>
-      <div class="success_stories-text">
-        <figure>
-          <img src="static/dist/images/user_icon.png" alt="quote" />
-        </figure>
-        <p class="success_stories-name">Félipe Milanes</p>
-        <p class="success_stories-job">Dueña de restaurante</p>
-        <p class="success_stories-description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          elit odio, luctus id iaculis vitae, sagittis ac est. Cras eu posuere
-          purus. Maecenas odio massa. Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Suspendisse elit odio, luctus id iaculis vitae,
-          sagittis ac est. Cras eu posuere purus. Maecenas odio massa.
-        </p>
+    <div class="contactenos">
+      <div class="contactenos__title">
+        <h2 class="title">Contactenos</h2>
+        <div class="contactenos__txt">
+          <img src="/static/dist/images/contact/tel.png" /> 3042174022
+          <br />
+          <img src="/static/dist/images/contact/mail.png" /> hola@dinamic.co
+          <br />
+          <img src="/static/dist/images/contact/house.png" /> Cra 70 F # 79 -
+          42. Bogota, Colombia <br />
+          <div class="rights">Todos los derechos reservados 2020</div>
+        </div>
+      </div>
+      <div class="contactenos__form">
+        <div class="form">
+          <form id="contact">
+            <div class="form__wrapper">
+              <div class="form__wrapper-field">
+                <label>Nombre</label>
+                <input type="text" />
+              </div>
+              <div class="form__wrapper-field">
+                <label>Celular</label>
+                <input type="text" />
+              </div>
+            </div>
+            <div class="form__wrapper">
+              <div class="form__wrapper-field">
+                <label>Correo</label>
+                <input type="text" />
+              </div>
+            </div>
+            <div class="form__wrapper">
+              <div class="form__wrapper-field">
+                <label>Comentarios</label>
+                <textarea></textarea>
+              </div>
+            </div>
+            <div class="form__wrapper">
+              <input
+                type="submit"
+                class="form__wrapper-btn"
+                value="Enviar"
+                data-gkey="{{ RECAPTCHA_WEB_KEY }}"
+              />
+            </div>
+          </form>
+          <!--<a href="https://www.freepik.com/vectors/background">Background vector created by starline - www.freepik.com</a>-->
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </main>
+</div>
 
-<footer>
-  <div class="footer__content">
-    <figure>
-      <img src="static/dist/images/logo.svg" alt="logo" />
-    </figure>
-    <div class="footer__content-info">
-      <p class="footer__content_title">Oficinas corporativas</p>
-      <p class="footer__content-text">
-        Vía España, <br />Plaza internacional, <br />Edificio Torre Banco<br />
-        Nacional de Panamá
-      </p>
-      <a href="tel:+5073606373">Tlf. +(507) 360-6373</a>
-    </div>
-  </div>
-  <div class="footer__legal">
-    <p class="footer__legal-all_rights">
-      ©2020. +Móvil Negocios. All rights reserved
-    </p>
-    <p class="footer__legal-privacy">
-      Póliticas de privacidad Condiciones de uso
-    </p>
-  </div>
-</footer>
+{% endblock %} {% block javascript %}
+<script src="https://www.google.com/recaptcha/api.js?render={{
+    RECAPTCHA_WEB_KEY
+  }}"></script>
 {% endblock %}
