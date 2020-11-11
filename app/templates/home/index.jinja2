@@ -86,7 +86,7 @@
     <div class="swiper">
       <div class="swiper__content">
         <h1 class="swiper__content-title">
-          sOLUCIONES <br />
+          SOLUCIONES <br />
           DIGITALES
         </h1>
         <img class="swiper__content-img" src="/static/dist/images/home.png" />
@@ -95,13 +95,69 @@
     <div class="banner">
       <div class="banner__info">
         <div class="banner__wrapper">
-          <h2 class="title">¿Por qué nos conocen?</h2>
-          <div class="banner__txt">
-            En Dinamic, nos hemos vuelto unos duros en desarrollar soluciones
-            digitales para mejorar el ecosistema digital de tu empresa y hacer
-            que los procesos internos sean más fáciles. Facilitamos y
-            personalizamos tus procesos web para que tú puedas enfocarte en lo
-            importante: traer más gente y vender más.
+          <div class="banner__container with-margin">
+            <h2 class="title">¿Por qué nos conocen?</h2>
+            <div class="banner__txt">
+              En Dinamic, nos hemos vuelto unos duros en desarrollar soluciones
+              digitales para mejorar el ecosistema digital de tu empresa y hacer
+              que los procesos internos sean más fáciles. Facilitamos y
+              personalizamos tus procesos web para que tú puedas enfocarte en lo
+              importante: <b>traer más gente y vender más.</b>
+            </div>
+          </div>
+          <div class="banner__container with-margin">
+            <h2 class="title">Lo que es importante para nosotros</h2>
+            <div class="banner__txt">
+              <ul>
+                <li>
+                  La responsabilidad y el compromiso con nuestro trabajo es
+                  fundamental para ser calidosos.
+                </li>
+                <li>
+                  La pasión por lo que hacemos es nuestro motor para
+                  materializar tus ideas y entregarte servicios de calidad.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="banner__wrapper">
+          <picture>
+            <img src="/static/dist/images/eco.jpg" />
+          </picture>
+        </div>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="banner__info">
+        <div class="banner__wrapper">
+          <picture>
+            <img src="/static/dist/images/passion.jpg" />
+          </picture>
+        </div>
+        <div class="banner__wrapper">
+          <div class="banner__container with-margin">
+            <h2 class="title">¿De dónde salimos?</h2>
+            <div class="banner__txt">
+              Somos un grupo de jóvenes capacitados, experimentados y
+              apasionados por materializar tus ideas. Tenemos 8 años de
+              experiencia en desarrollo, diseño y programación web y le metemos
+              la ficha a estudiar y capacitarnos para brindarte soluciones
+              buenas, bonitas y baratas. Estamos pilas a las últimas
+              actualizaciones tecnológicas para que tus servicios estén siempre
+              a la par con el mercado.
+            </div>
+          </div>
+          <div class="banner__container with-margin">
+            <h2 class="title">Nuestra razón para trabajar</h2>
+            <div class="banner__txt">
+              Queremos que te des cuenta que no es difícil entrar al mundo
+              digital y visibilizar tu empresa a nuevos usuarios. Lo que te
+              ofrecemos está hecho a tu medida y adaptado a tu bolsillo. No solo
+              te garantizamos bueno, bonito y barato, sino que nos volveremos
+              tus parceros, para poder conocerte, entenderte y que recibas tal
+              cual lo que imaginaste.
+            </div>
           </div>
         </div>
       </div>
@@ -109,80 +165,58 @@
     <div class="banner">
       <div class="banner__info">
         <div class="banner__wrapper">
-          <h2 class="title">Lo que es importante para nosotros</h2>
-          <div class="banner__txt">
-            * La responsabilidad y el compromiso con nuestro trabajo es
-            fundamental para ser calidosos. * La pasión por lo que hacemos es
-            nuestro motor para materializar tus ideas y entregarte servicios de
-            calidad.
+          <div class="banner__container with-margin">
+            <h2 class="title">Si esto te suena familiar, estás donde es</h2>
+            <div class="banner__txt">
+              <ul>
+                <li>
+                  <b>Sitios web y apps:</b> Desarrollo y diseño de webs
+                  personalizadas para tu negocio y las necesidades de tus
+                  usuarios. No usamos Content Management Systems (CMS), tendrás
+                  una página web hecha a la medida, con diseño único, segura y
+                  rápida. Nuestro equipo de diseño UI/UX se encargará de que tu
+                  solución sea dinámica y fácil de usar.
+                </li>
+                <li>
+                  <b>Consultoría:</b> Nuestro equipo especializado en diferentes
+                  áreas digitales te acompañará en todo el proceso de
+                  transformación digital.
+                </li>
+              </ul>
+            </div>
           </div>
+        </div>
+        <div class="banner__wrapper">
+          <picture>
+            <img src="/static/dist/images/passion.jpg" />
+          </picture>
         </div>
       </div>
     </div>
     <div class="banner">
       <div class="banner__info">
         <div class="banner__wrapper">
-          <h2 class="title">Si esto te suena familiar, estás donde es</h2>
-          <div class="banner__txt">
-            * Sitios web y apps: desarrollo y diseño de webs personalizadas para
-            tu negocio y las necesidades de tus usuarios. No usamos Content
-            Management Systems (CMS), tendrás una página web hecha a la medida,
-            con diseño único, segura y rápida. Nuestro equipo de diseño UI/UX se
-            encargará de que tu solución sea dinámica y fácil de usar. *
-            Consultoría: nuestro equipo especializado en diferentes áreas
-            digitales te acompañará en todo el proceso de transformación
-            digital.
+          <div class="banner__container">
+            <h2 class="title">Los chicharrones que solucionamos</h2>
+            <ul class="features">
+              {% for servicio in data.servicios %}
+              <li class="features__item">
+                <img
+                  src="/static/dist/images/feature_{{ loop.index }}.png"
+                  class="features__item-img"
+                />
+                <p class="features__item-title">{{ servicio }}</p>
+              </li>
+              {% endfor %}
+            </ul>
           </div>
         </div>
       </div>
-    </div>
-    <div class="banner">
-      <div class="banner__info">
-        <div class="banner__wrapper">
-          <h2 class="title">Nuestra razón para trabajar</h2>
-          <div class="banner__txt">
-            Queremos que te des cuenta que no es difícil entrar al mundo digital
-            y visibilizar tu empresa a nuevos usuarios. Lo que te ofrecemos está
-            hecho a tu medida y adaptado a tu bolsillo. No solo te garantizamos
-            bueno, bonito y barato, sino que nos volveremos tus parceros, para
-            poder conocerte, entenderte y que recibas tal cual lo que
-            imaginaste.
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="banner">
-      <div class="banner__info">
-        <div class="banner__wrapper">
-          <h2 class="title">¿De dónde salimos?</h2>
-          <div class="banner__txt">
-            Somos un grupo de jóvenes capacitados, experimentados y apasionados
-            por materializar tus ideas. Tenemos 8 años de experiencia en
-            desarrollo, diseño y programación web y le metemos la ficha a
-            estudiar y capacitarnos para brindarte soluciones buenas, bonitas y
-            baratas. Estamos pilas a las últimas actualizaciones tecnológicas
-            para que tus servicios estén siempre a la par con el mercado.
-          </div>
-        </div>
-        <div class="banner__wrapper">
-          <h2 class="title">Los chicharrones que solucionamos:</h2>
-          <ul class="features">
-            {% for servicio in data.servicios %}
-            <li class="features__item">
-              <img
-                src="/static/dist/images/time.png"
-                class="features__item-img"
-              />
-              <p class="features__item-title">{{ servicio }}</p>
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
+
       <hr class="separator" />
     </div>
     <div class="projects">
-      <h2 class="title">Proyectos</h2>
+      <h2 class="title">Nuestros clientes</h2>
       <div class="projects__container">
         <div class="swiper-container">
           <div class="swiper-wrapper">
@@ -192,12 +226,12 @@
               <div class="swiper-slide__content">
                 <a href="{{ value }}">
                   <div
-                    class="projects__item"
-                    style="background-image: url('/static/dist/images/project{{
-                      index
-                    }}.png')"
+                    class="projects__item {% if index == 1 or index == 4 %} dark {% endif %}"
                   >
+                    <img src="/static/dist/images/project{{ index }}.png" />
+                    {% if index == 7 %}
                     <h3 class="projects__name">{{ key }}</h3>
+                    {% endif %}
                   </div>
                 </a>
               </div>
@@ -211,9 +245,9 @@
     </div>
     <div class="contactenos">
       <div class="contactenos__title">
-        <h2 class="title">Contactenos</h2>
         <div class="contactenos__txt">
-          <img src="/static/dist/images/contact/tel.png" /> 3042174022
+          <br />
+          <img src="/static/dist/images/contact/tel.png" /> 3042174023
           <br />
           <img src="/static/dist/images/contact/mail.png" /> hola@dinamic.co
           <br />
@@ -223,48 +257,94 @@
         </div>
       </div>
       <div class="contactenos__form">
-        <div class="form">
-          <form id="contact">
-            <div class="form__wrapper">
-              <div class="form__wrapper-field">
-                <label>Nombre</label>
-                <input type="text" />
-              </div>
-              <div class="form__wrapper-field">
-                <label>Celular</label>
-                <input type="text" />
-              </div>
-            </div>
-            <div class="form__wrapper">
-              <div class="form__wrapper-field">
-                <label>Correo</label>
-                <input type="text" />
-              </div>
-            </div>
-            <div class="form__wrapper">
-              <div class="form__wrapper-field">
-                <label>Comentarios</label>
-                <textarea></textarea>
-              </div>
-            </div>
-            <div class="form__wrapper">
-              <input
-                type="submit"
-                class="form__wrapper-btn"
-                value="Enviar"
-                data-gkey="{{ RECAPTCHA_WEB_KEY }}"
-              />
-            </div>
-          </form>
-          <!--<a href="https://www.freepik.com/vectors/background">Background vector created by starline - www.freepik.com</a>-->
-        </div>
+        <svg
+          style="width: 0; height: 0; position: absolute"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <linearGradient id="my-cool-gradient" x2="1" y2="1">
+            <stop offset="0%" stop-color="#1DD3B0" />
+            <stop offset="100%" stop-color="#AFFC41" />
+          </linearGradient>
+        </svg>
+        <svg
+          id="dinamic"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          viewBox="0 0 467.46 73.34"
+          style="enable-background: new 0 0 467.46 73.34"
+          xml:space="preserve"
+        >
+          <g>
+            <g>
+              <g class="word">
+                <path
+                  class="st0"
+                  d="M455.47,53.79c-1.5,2.11-3.37,3.93-5.56,5.41c-3.36,2.26-7.7,3.55-12.56,3.74
+                                        c-5.15,0.2-9.45-0.47-12.81-1.99c-2.79-1.26-5.33-3.22-7.53-5.81c-3.44-4.04-5.5-8.92-6.15-14.54l-0.1-1.16
+                                        c-0.09-1.02-0.13-2.04-0.13-3.03c0-7.35,2.14-13.6,6.37-18.57c2.21-2.59,4.74-4.55,7.53-5.81c3.36-1.52,7.66-2.19,12.81-1.99
+                                        c4.85,0.19,9.2,1.48,12.56,3.74c2.19,1.47,4.06,3.29,5.56,5.41l0.37,0.52h11.62l-0.93-1.81c-2.41-4.68-5.76-8.57-9.97-11.56
+                                        c-9.44-6.71-24.36-8.28-35.47-3.74c-4.02,1.65-7.62,4.07-10.69,7.22c-6.77,6.92-10.2,15.86-10.2,26.6c0,0.61,0.01,1.24,0.04,1.9
+                                        h-0.02l0.08,1.32c0.59,9.38,3.99,17.31,10.1,23.55c3.07,3.14,6.67,5.57,10.69,7.22c4.26,1.74,9.07,2.59,13.93,2.59
+                                        c7.81,0,15.72-2.18,21.54-6.32c4.21-2.99,7.56-6.88,9.97-11.56l0.93-1.81h-11.62L455.47,53.79z"
+                />
+              </g>
+              <g class="word">
+                <path
+                  class="st0"
+                  d="M43.32,3.25c-4.01-1.64-8.23-2.47-12.54-2.47H0v72.57h30.78c4.31,0,8.53-0.83,12.54-2.47
+                                        c4.02-1.65,7.62-4.07,10.69-7.22c6.77-6.91,10.2-15.86,10.2-26.6c0-10.73-3.43-19.68-10.2-26.59
+                                        C50.94,7.32,47.34,4.89,43.32,3.25z M10.42,10.77h20.04c7.02,0,12.56,2.52,16.95,7.72c4.23,4.97,6.37,11.22,6.37,18.57
+                                        c0,7.35-2.14,13.6-6.38,18.57c-4.38,5.19-9.92,7.71-16.94,7.71H10.42V10.77z"
+                />
+              </g>
+              <g class="word">
+                <rect
+                  x="83"
+                  y="0.77"
+                  class="st0"
+                  width="10.42"
+                  height="72.57"
+                />
+              </g>
+              <g class="word">
+                <polygon
+                  class="st0"
+                  points="169.07,57.2 127.64,0.77 116.56,0.77 116.56,73.34 126.99,73.34 126.99,16.72 168.42,73.34 
+                                        179.5,73.34 179.5,0.77 169.07,0.77 			"
+                />
+              </g>
+              <g class="word">
+                <path
+                  class="st0"
+                  d="M222.06,0.77l-30.8,72.57h11.49l8.58-20.33h33.08l8.58,20.33h11.49l-30.8-72.57H222.06z M240.29,43.23
+                                        h-24.85l12.43-29.73L240.29,43.23z"
+                />
+              </g>
+              <g class="word">
+                <polygon
+                  class="st0"
+                  points="311.76,33.19 287.29,0.77 276.22,0.77 276.22,73.34 286.65,73.34 286.65,17.66 311.77,49.45 
+                                        336.46,17.71 336.46,73.34 346.89,73.34 346.89,0.77 335.81,0.77 			"
+                />
+              </g>
+              <g class="word">
+                <rect
+                  x="370.02"
+                  y="0.77"
+                  class="st0"
+                  width="10.42"
+                  height="72.57"
+                />
+              </g>
+            </g>
+          </g>
+        </svg>
       </div>
     </div>
   </main>
 </div>
 
-{% endblock %} {% block javascript %}
-<script src="https://www.google.com/recaptcha/api.js?render={{
-    RECAPTCHA_WEB_KEY
-  }}"></script>
 {% endblock %}
